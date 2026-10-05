@@ -1,0 +1,1268 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تجاري ١ · المحاضرة الأولى</title>
+<meta name="description" content="تطبيق مذاكرة تفاعلي للمحاضرة الأولى من تجاري ١: خريطة، حفظ حرفي، بطاقات، اختبار وأسئلة مقالية، من نص المحاضرة فقط.">
+<link rel="canonical" href="https://ahmadkataf.github.io/tijari1/">
+<meta name="theme-color" content="#EFF3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1210" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="تجاري ١">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:title" content="تجاري ١ · المحاضرة الأولى">
+<meta property="og:description" content="تطبيق مذاكرة تفاعلي للمحاضرة الأولى من تجاري ١: خريطة، حفظ حرفي، بطاقات، اختبار وأسئلة مقالية، من نص المحاضرة فقط.">
+<meta property="og:url" content="https://ahmadkataf.github.io/tijari1/">
+<meta property="og:image" content="https://ahmadkataf.github.io/tijari1/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="موضوع الحقوق التجارية">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/aref-ruqaa-arabic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face {font-family: 'Aref Ruqaa'; font-style: normal; font-display: swap; font-weight: 400; src: url(fonts/aref-ruqaa-arabic-400-normal.woff2) format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;}
+@font-face {font-family: 'Aref Ruqaa'; font-style: normal; font-display: swap; font-weight: 400; src: url(fonts/aref-ruqaa-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face {font-family: 'Aref Ruqaa'; font-style: normal; font-display: swap; font-weight: 700; src: url(fonts/aref-ruqaa-arabic-700-normal.woff2) format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;}
+@font-face {font-family: 'Aref Ruqaa'; font-style: normal; font-display: swap; font-weight: 700; src: url(fonts/aref-ruqaa-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face {font-family: 'Markazi Text'; font-style: normal; font-display: swap; font-weight: 400; src: url(fonts/markazi-text-arabic-400-normal.woff2) format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;}
+@font-face {font-family: 'Markazi Text'; font-style: normal; font-display: swap; font-weight: 400; src: url(fonts/markazi-text-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face {font-family: 'Markazi Text'; font-style: normal; font-display: swap; font-weight: 500; src: url(fonts/markazi-text-arabic-500-normal.woff2) format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;}
+@font-face {font-family: 'Markazi Text'; font-style: normal; font-display: swap; font-weight: 500; src: url(fonts/markazi-text-latin-500-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face {font-family: 'Markazi Text'; font-style: normal; font-display: swap; font-weight: 600; src: url(fonts/markazi-text-arabic-600-normal.woff2) format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;}
+@font-face {font-family: 'Markazi Text'; font-style: normal; font-display: swap; font-weight: 600; src: url(fonts/markazi-text-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face {font-family: 'Markazi Text'; font-style: normal; font-display: swap; font-weight: 700; src: url(fonts/markazi-text-arabic-700-normal.woff2) format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;}
+@font-face {font-family: 'Markazi Text'; font-style: normal; font-display: swap; font-weight: 700; src: url(fonts/markazi-text-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face {font-family: 'IBM Plex Sans Arabic'; font-style: normal; font-display: swap; font-weight: 400; src: url(fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2) format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;}
+@font-face {font-family: 'IBM Plex Sans Arabic'; font-style: normal; font-display: swap; font-weight: 400; src: url(fonts/ibm-plex-sans-arabic-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face {font-family: 'IBM Plex Sans Arabic'; font-style: normal; font-display: swap; font-weight: 500; src: url(fonts/ibm-plex-sans-arabic-arabic-500-normal.woff2) format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;}
+@font-face {font-family: 'IBM Plex Sans Arabic'; font-style: normal; font-display: swap; font-weight: 500; src: url(fonts/ibm-plex-sans-arabic-latin-500-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face {font-family: 'IBM Plex Sans Arabic'; font-style: normal; font-display: swap; font-weight: 600; src: url(fonts/ibm-plex-sans-arabic-arabic-600-normal.woff2) format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;}
+@font-face {font-family: 'IBM Plex Sans Arabic'; font-style: normal; font-display: swap; font-weight: 600; src: url(fonts/ibm-plex-sans-arabic-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face {font-family: 'IBM Plex Sans Arabic'; font-style: normal; font-display: swap; font-weight: 700; src: url(fonts/ibm-plex-sans-arabic-arabic-700-normal.woff2) format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;}
+@font-face {font-family: 'IBM Plex Sans Arabic'; font-style: normal; font-display: swap; font-weight: 700; src: url(fonts/ibm-plex-sans-arabic-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+:root{color-scheme:light}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+:root{
+  /* Layout: a study desk. One reading column under a sticky tab rail. Book excerpts are set the way the student marked the scans: a green bracket in the margin, highlighter strokes on key terms, page refs in the book's own "ص" style, and memory tricks as Ruqaa pen notes. */
+  --paper:#EFF3EF;
+  --sheet:#FBFCFA;
+  --ink:#12231B;
+  --muted:#596A61;
+  --rule:#D2DCD5;
+  --green:#0D6942;
+  --on-green:#FFFFFF;
+  --marker:#BCEFC8;
+  --seal:#B4501A;
+  --pen:#2446A0;
+  --good:#17784A;
+  --good-soft:#DCF2E4;
+  --bad:#B0352A;
+  --bad-soft:#F7E1DD;
+  --shadow:0 1px 0 rgba(18,35,27,.05), 0 14px 30px -18px rgba(18,35,27,.35);
+  --f-display:"Aref Ruqaa","Noto Naskh Arabic","Amiri",serif;
+  --f-text:"Markazi Text","Noto Naskh Arabic","Amiri","Times New Roman",serif;
+  --f-ui:"IBM Plex Sans Arabic","Segoe UI","Tahoma","Geeza Pro",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0B1210; --sheet:#121B17; --ink:#E1EAE4; --muted:#95A69C; --rule:#26342D;
+    --green:#4CBF88; --on-green:#05190F; --marker:#1E4A35; --seal:#EE9256; --pen:#9CB2FF;
+    --good:#5BCB94; --good-soft:#12321F; --bad:#F08273; --bad-soft:#3A1B17;
+    --shadow:0 1px 0 rgba(0,0,0,.35), 0 16px 32px -18px rgba(0,0,0,.8);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0B1210; --sheet:#121B17; --ink:#E1EAE4; --muted:#95A69C; --rule:#26342D;
+  --green:#4CBF88; --on-green:#05190F; --marker:#1E4A35; --seal:#EE9256; --pen:#9CB2FF;
+  --good:#5BCB94; --good-soft:#12321F; --bad:#F08273; --bad-soft:#3A1B17;
+  --shadow:0 1px 0 rgba(0,0,0,.35), 0 16px 32px -18px rgba(0,0,0,.8);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 3.75rem)}
+html,body{background:var(--paper);color:var(--ink)}
+body{font-family:var(--f-ui);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+button{font-family:inherit}
+.wrap{max-width:56rem;margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+.muted{color:var(--muted)}
+.sm{font-size:.86rem}
+.row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.hint-line{margin:0;color:var(--muted);font-size:.88rem}
+:where(button,[role="button"],textarea,summary,input,a):focus-visible{outline:3px solid var(--pen);outline-offset:2px;border-radius:6px}
+
+/* masthead */
+.mast{display:grid;gap:.85rem;padding-block:clamp(1.75rem,5vw,3rem) 1.4rem}
+.eyebrow{margin:0;color:var(--muted);font-size:.92rem;font-weight:500}
+.title{margin:0;font-family:var(--f-display);font-weight:700;font-size:clamp(2.5rem,9vw,4.4rem);line-height:1.35;text-wrap:balance}
+.title .hl{background-image:linear-gradient(transparent 42%,var(--marker) 42%,var(--marker) 88%,transparent 88%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding-inline:.12em}
+.lede{margin:0;max-width:40rem;font-size:1.0625rem;color:var(--muted)}
+.stats{list-style:none;margin:.15rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.35rem 1.4rem;font-size:.9rem;color:var(--muted)}
+.stats b{color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* tabs */
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-block:1px solid var(--rule)}
+@supports ((backdrop-filter:blur(6px)) or (-webkit-backdrop-filter:blur(6px))){
+  .tabs{background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+}
+.tabs-in{display:flex;gap:.1rem;overflow-x:auto;scrollbar-width:none}
+.tabs-in::-webkit-scrollbar{display:none}
+.tab{flex:none;position:relative;isolation:isolate;border:0;background:none;color:var(--muted);font:600 .95rem/1 var(--f-ui);padding:1rem .75rem .95rem;cursor:pointer;white-space:nowrap}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink)}
+.tab[aria-selected="true"]::after{content:"";position:absolute;inset-inline:.4rem;bottom:.72rem;height:.62rem;background:var(--marker);z-index:-1;border-radius:2px}
+@media (max-width:480px){.tab{padding-inline:.55rem;font-size:.9rem}.tab[aria-selected="true"]::after{inset-inline:.3rem}}
+
+/* panels */
+main{padding-block:1.75rem 3.5rem}
+.phead{display:grid;gap:.35rem;margin-block-end:1.4rem}
+.phead h2{margin:0;font-size:1.55rem;line-height:1.3;font-weight:700;text-wrap:balance}
+.phead p{margin:0;color:var(--muted);max-width:44rem}
+.tools{display:flex;flex-wrap:wrap;gap:.5rem;margin-block-start:.6rem}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;min-height:44px;padding:.55rem 1rem;border-radius:9px;border:1.5px solid var(--rule);background:var(--sheet);color:var(--ink);font:600 .95rem/1.25 var(--f-ui);cursor:pointer;text-align:center}
+.btn:hover{border-color:var(--green)}
+.btn.primary{background:var(--green);border-color:var(--green);color:var(--on-green)}
+.btn.ghost{background:transparent}
+.btn[aria-pressed="true"]{background:var(--marker);border-color:var(--green);color:var(--ink)}
+.btn.primary[aria-pressed="true"]{background:var(--green);color:var(--on-green)}
+.btn.warn{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 45%,var(--rule))}
+.btn.sm{min-height:36px;padding:.35rem .75rem;font-size:.86rem}
+
+/* marks that recur everywhere */
+.pg{display:inline-block;margin-inline-start:.35rem;padding:.3rem .45rem .22rem;border:1px solid color-mix(in srgb,var(--seal) 60%,transparent);border-radius:4px;color:var(--seal);font:600 .74rem/1 var(--f-ui);white-space:nowrap;vertical-align:.14em;font-variant-numeric:tabular-nums}
+.art{font-family:var(--f-ui);font-size:.8em;font-weight:600;color:var(--pen);border-bottom:1.5px solid color-mix(in srgb,var(--pen) 40%,transparent);padding-bottom:.05em;margin-inline-start:.2rem;white-space:nowrap}
+.m{font-weight:600;background-image:linear-gradient(transparent 34%,var(--marker) 34%,var(--marker) 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding-inline:.08em;border-radius:2px}
+.fn{font:500 .76rem/1.4 var(--f-ui);color:var(--muted);border:1px dashed var(--rule);border-radius:4px;padding:.1rem .35rem;margin-inline-start:.25rem;white-space:nowrap;vertical-align:.12em}
+.cut{font:600 .78rem/1.4 var(--f-ui);color:var(--seal);margin-inline-start:.3rem}
+.note{display:flex;flex-wrap:wrap;align-items:baseline;gap:.35rem .6rem;margin:.4rem 0 0;color:var(--pen);transform:rotate(-1deg);transform-origin:100% 50%}
+.note-k{font:600 .72rem/1 var(--f-ui);border:1px dashed currentColor;border-radius:4px;padding:.28rem .4rem}
+.note-t{font-family:var(--f-display);font-size:1.4rem;line-height:1.5}
+
+/* map */
+.root-node{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem;margin:0 0 .9rem;font-weight:700;font-size:1.1rem}
+.kicker{font-family:var(--f-display);font-size:1.7rem;color:var(--green);line-height:1}
+.tree{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+.sec>details{background:var(--sheet);border:1px solid var(--rule);border-radius:14px}
+.sec summary{display:flex;align-items:center;gap:.8rem;padding:1rem 1.1rem;cursor:pointer;list-style:none}
+.sec summary::-webkit-details-marker{display:none}
+.sec-n{font-family:var(--f-display);font-size:2.2rem;line-height:1;color:var(--green);width:2.2rem;flex:none;text-align:center}
+.sec-t{flex:1;min-width:0;font-weight:700;font-size:1.12rem;line-height:1.45;text-wrap:balance}
+.chev{flex:none;width:1.25rem;height:1.25rem;color:var(--muted);transition:transform .2s}
+details[open]>summary .chev{transform:rotate(-90deg)}
+.sec-body{display:grid;gap:1.2rem;padding:0 1.1rem 1.25rem}
+.grp{border-inline-start:2px solid var(--rule);padding-inline-start:1rem;min-width:0}
+.grp.deep{margin-inline-start:1.1rem}
+.grp h3{margin:0 0 .45rem;font-size:1rem;line-height:1.55;font-weight:700;text-wrap:balance}
+.grp h3 small{font-weight:500;color:var(--muted);font-size:.85rem}
+.leaves{list-style:none;margin:0;padding:0;display:grid;gap:.4rem;font-family:var(--f-text);font-size:1.28rem;line-height:1.7}
+.leaves>li{position:relative;padding-inline-start:1.05rem;transition:filter .2s,opacity .2s}
+.leaves>li::before{content:"";position:absolute;inset-inline-start:0;top:.86em;width:.5rem;height:2px;background:var(--green)}
+.leaves>li.lv2{margin-inline-start:1.1rem}
+.leaves>li.lv2::before{width:.38rem;height:.38rem;border-radius:50%;background:none;border:1.5px solid var(--green);top:.72em}
+ol.leaves{counter-reset:n}
+ol.leaves>li{padding-inline-start:1.7rem}
+ol.leaves>li::before{counter-increment:n;content:counter(n,arabic-indic) "-";width:auto;height:auto;background:none;top:0;color:var(--green);font-family:var(--f-ui);font-weight:700;font-size:1rem;line-height:2.176rem}
+.recite .leaves>li{cursor:pointer}
+.recite .leaves>li:not(.shown){filter:blur(6px);opacity:.7;user-select:none;-webkit-user-select:none}
+.recite-hint{display:none;margin:0 0 1rem;padding:.6rem .85rem;border:1.5px dashed var(--green);border-radius:9px;color:var(--ink);font-size:.92rem}
+.recite .recite-hint{display:block}
+
+/* verbatim */
+.vtop{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem}
+.seg{display:inline-flex;flex-wrap:wrap;gap:.3rem;padding:.3rem;border:1px solid var(--rule);border-radius:11px;background:var(--sheet);max-width:100%}
+.seg button{border:0;background:transparent;color:var(--muted);font:600 .92rem/1.2 var(--f-ui);padding:.55rem .8rem;border-radius:8px;cursor:pointer;min-height:40px}
+.seg button[aria-checked="true"]{background:var(--marker);color:var(--ink)}
+.vcount{margin:0;color:var(--muted);font-size:.9rem}
+.vcount b{color:var(--ink)}
+.vlist{display:grid;gap:1.1rem;margin-block-start:1.2rem}
+.vcard{display:grid;gap:.85rem;padding:1.15rem 1.2rem 1.05rem;background:var(--sheet);border:1px solid var(--rule);border-radius:14px;min-width:0}
+.vcard.done{border-color:color-mix(in srgb,var(--green) 55%,var(--rule))}
+.vhead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.4rem .8rem}
+.vhead h3{margin:0;font-size:1.05rem;line-height:1.5;font-weight:700;min-width:0}
+.excerpt{position:relative;margin:0;padding-inline-start:1.15rem;font-family:var(--f-text);font-size:1.42rem;line-height:2;overflow-wrap:anywhere}
+.excerpt::before{content:"";position:absolute;inset-inline-start:0;top:.5em;bottom:.5em;width:.55rem;border:2px solid var(--green);border-inline-end:0}
+.blank{font:inherit;color:inherit;line-height:1.25;border:0;border-bottom:2px solid var(--green);background:color-mix(in srgb,var(--marker) 40%,transparent);border-radius:3px 3px 0 0;padding:0 .12em;margin:0;cursor:pointer}
+.blank>span{visibility:hidden}
+.blank.on{background:var(--marker);border-bottom-color:transparent}
+.blank.on>span{visibility:visible}
+.excerpt.cues{color:var(--pen);cursor:pointer;word-spacing:.18em}
+.veil{display:flex;align-items:center;justify-content:center;min-height:6.5rem;padding:1rem;border:1.5px dashed var(--rule);border-radius:10px;color:var(--muted);text-align:center;font-size:.95rem}
+.vactions{display:flex;flex-wrap:wrap;gap:.5rem}
+.vwrite{display:grid;gap:.6rem}
+.lab-sm{font-size:.88rem;color:var(--muted);font-weight:600}
+textarea{width:100%;min-height:7.5rem;padding:.75rem .85rem;border:1.5px solid var(--rule);border-radius:10px;background:var(--paper);color:var(--ink);font-family:var(--f-text);font-size:1.3rem;line-height:1.75;resize:vertical}
+textarea:focus{border-color:var(--green)}
+.vres{display:grid;gap:.55rem}
+.vres:empty{display:none}
+.score-line{margin:0;font-weight:700}
+.diff .ok{color:var(--good)}
+.diff .miss{background:var(--bad-soft);color:var(--bad);border-radius:3px;padding-inline:.08em;text-decoration:underline wavy;text-underline-offset:.32em}
+
+/* cards */
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{border:1.5px solid var(--rule);background:transparent;color:var(--muted);font:600 .9rem/1.2 var(--f-ui);padding:.45rem .8rem;border-radius:999px;cursor:pointer;min-height:40px}
+.chip .cnt{font-weight:500;margin-inline-start:.2rem}
+.chip[aria-pressed="true"]{background:var(--marker);color:var(--ink);border-color:var(--green)}
+.lbox{display:grid;gap:.45rem;margin-block:1.1rem}
+.lbar{display:flex;height:8px;border-radius:99px;overflow:hidden;background:var(--rule)}
+.lbar i{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:.2rem 1.1rem;font-size:.85rem;color:var(--muted)}
+.dot{display:inline-block;width:.62rem;height:.62rem;border-radius:50%;margin-inline-end:.3rem;vertical-align:.02em}
+.flash{perspective:1600px;cursor:pointer;border-radius:16px}
+.flash-in{display:grid;position:relative;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+.flash.flipped .flash-in{transform:rotateY(180deg)}
+.face{grid-area:1/1;display:flex;flex-direction:column;gap:.85rem;min-height:17rem;padding:1.3rem 1.3rem 1.2rem;background:var(--sheet);border:1px solid var(--rule);border-radius:16px;box-shadow:var(--shadow);-webkit-backface-visibility:hidden;backface-visibility:hidden;min-width:0}
+.face.back{transform:rotateY(180deg)}
+.ftop{display:flex;justify-content:space-between;align-items:center;gap:.5rem;font-size:.82rem;color:var(--muted);font-weight:600}
+.face .q{margin:0;font-family:var(--f-text);font-size:clamp(1.45rem,4.6vw,1.8rem);line-height:1.55;font-weight:600;text-wrap:balance}
+.face .a{margin:0;font-family:var(--f-text);font-size:clamp(1.25rem,3.8vw,1.45rem);line-height:1.85}
+.face .a .art{white-space:normal}
+.face .hint{margin:auto 0 0;color:var(--muted);font-size:.85rem}
+.cctrl{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-block-start:1rem}
+.cmeta{margin:.7rem 0 0;color:var(--muted);font-size:.88rem;text-align:center}
+.done-card{display:grid;gap:.8rem;justify-items:start;padding:1.4rem;background:var(--sheet);border:1px solid var(--rule);border-radius:16px}
+.done-card .big{font-size:clamp(2rem,8vw,3rem)}
+
+/* quiz */
+.qstart,.qcard,.result,.ework{display:grid;gap:1rem;padding:1.3rem;background:var(--sheet);border:1px solid var(--rule);border-radius:16px;min-width:0}
+.qlead{margin:0;font-size:1.02rem}
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:.6rem;color:var(--muted);font-size:.9rem;font-weight:600;margin-block-end:.5rem}
+.qbar{height:6px;background:var(--rule);border-radius:99px;overflow:hidden;margin-block-end:1rem}
+.qbar i{display:block;height:100%;background:var(--green);transition:width .3s}
+.qkind{font:600 .8rem/1 var(--f-ui);color:var(--seal)}
+.qtext{margin:0;font-family:var(--f-text);font-size:clamp(1.4rem,4.4vw,1.7rem);line-height:1.6;font-weight:600}
+.opts{display:grid;gap:.55rem}
+.opt{display:flex;align-items:flex-start;gap:.75rem;width:100%;padding:.75rem .85rem;border:1.5px solid var(--rule);border-radius:11px;background:var(--paper);color:var(--ink);font:500 1.02rem/1.6 var(--f-ui);text-align:start;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--green)}
+.opt:disabled{cursor:default}
+.opt .k{flex:none;display:grid;place-items:center;width:1.85rem;height:1.85rem;border-radius:50%;border:1.5px solid var(--rule);font-weight:700;font-size:.9rem;line-height:1;margin-top:.05rem}
+.opt.right{border-color:var(--good);background:var(--good-soft)}
+.opt.right .k{border-color:var(--good);background:var(--good);color:var(--on-green)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .k{border-color:var(--bad);background:var(--bad);color:var(--sheet)}
+.fb{display:grid;gap:.45rem;justify-items:start;padding:.9rem 1rem;border-radius:11px}
+.fb.ok{background:var(--good-soft)}
+.fb.no{background:var(--bad-soft)}
+.fb .v{font-weight:700}
+.fb.ok .v{color:var(--good)}
+.fb.no .v{color:var(--bad)}
+.fb .src{margin:0;font-family:var(--f-text);font-size:1.22rem;line-height:1.75}
+.fb .pg{margin:0}
+.qnext{display:flex;justify-content:flex-end}
+.big{margin:0;font-family:var(--f-display);font-size:clamp(3rem,13vw,5rem);line-height:1.25;color:var(--green)}
+.rmsg{margin:0;font-weight:600;font-size:1.05rem}
+.rh{margin:.3rem 0 0;font-size:1rem}
+.wrong-list{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.wrong-list li{padding:.75rem .9rem;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+.wrong-list .wq{font-family:var(--f-text);font-size:1.2rem;line-height:1.6;margin:0 0 .25rem}
+.wrong-list .wa{margin:0;color:var(--good);font-weight:600}
+
+/* essay */
+.egrid{display:grid;gap:1.2rem}
+.elist{display:grid;gap:.45rem;align-content:start}
+.eitem{display:flex;align-items:baseline;gap:.6rem;width:100%;padding:.7rem .9rem;border:1.5px solid var(--rule);border-radius:11px;background:transparent;color:var(--ink);font:600 .96rem/1.45 var(--f-ui);text-align:start;cursor:pointer}
+.eitem .no{font-family:var(--f-display);color:var(--green);font-size:1.35rem;line-height:1;flex:none}
+.eitem .et{flex:1;min-width:0}
+.eitem .cov{font-weight:500;font-size:.8rem;color:var(--muted);white-space:nowrap}
+.eitem[aria-pressed="true"]{background:var(--marker);border-color:var(--green)}
+.eprompt{margin:0;font-family:var(--f-text);font-size:clamp(1.4rem,4.2vw,1.65rem);line-height:1.6;font-weight:600}
+.eres{display:grid;gap:.7rem}
+.ecov{margin:0;font-weight:700}
+.emeter{height:8px;border-radius:99px;background:var(--rule);overflow:hidden}
+.emeter i{display:block;height:100%;background:var(--green);transition:width .3s}
+.checklist{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
+.checklist label{display:flex;align-items:flex-start;gap:.7rem;padding:.65rem .8rem;border:1.5px solid var(--rule);border-radius:10px;background:var(--paper);cursor:pointer}
+.checklist input{flex:none;width:1.2rem;height:1.2rem;margin:.4rem 0 0;accent-color:var(--green)}
+.checklist .t{flex:1;min-width:0;font-family:var(--f-text);font-size:1.22rem;line-height:1.6}
+.checklist .auto{flex:none;font:600 .72rem/1 var(--f-ui);color:var(--green);border:1px solid currentColor;border-radius:4px;padding:.28rem .38rem;margin-top:.35rem;white-space:nowrap}
+.checklist label:has(input:checked){border-color:color-mix(in srgb,var(--green) 55%,var(--rule));background:color-mix(in srgb,var(--marker) 35%,var(--paper))}
+@media (min-width:860px){.egrid{grid-template-columns:17rem minmax(0,1fr);align-items:start}.elist{position:sticky;top:calc(env(safe-area-inset-top,0px) + 4.2rem)}}
+
+/* compare */
+.ctab{background:var(--sheet);border:1px solid var(--rule);border-radius:14px;overflow:hidden;margin-block-end:1.4rem}
+.ctab>h3{margin:0;padding:.9rem 1.05rem;font-size:1.05rem;line-height:1.5;border-bottom:1px solid var(--rule)}
+.crow{display:grid;grid-template-columns:9.5rem minmax(0,1fr) minmax(0,1fr);border-bottom:1px solid var(--rule)}
+.crow:last-child{border-bottom:0}
+.crow>div{padding:.75rem .95rem;min-width:0}
+.crow .lab{font-weight:700;font-size:.9rem;color:var(--muted)}
+.crow .c{font-family:var(--f-text);font-size:1.2rem;line-height:1.65;border-inline-start:1px solid var(--rule)}
+.crow.head .c{font-family:var(--f-ui);font-size:.95rem;font-weight:700;color:var(--ink);background:color-mix(in srgb,var(--marker) 45%,transparent)}
+.crow .none{color:var(--muted);font-family:var(--f-ui);font-size:.85rem}
+.ins{margin:0;padding:.85rem 1.05rem;border-top:1px solid var(--rule);font-size:.95rem;line-height:1.7}
+.ins b{color:var(--seal)}
+.nrow{display:grid;grid-template-columns:minmax(9rem,14rem) minmax(0,1fr) auto;gap:.2rem 1rem;align-items:baseline;padding:.75rem 1.05rem;border-bottom:1px solid var(--rule)}
+.nrow:last-child{border-bottom:0}
+.nrow .n{font-weight:700;color:var(--pen);font-variant-numeric:tabular-nums}
+.nrow .w{font-family:var(--f-text);font-size:1.2rem;line-height:1.6;min-width:0}
+@media (max-width:640px){
+  .crow{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .crow .lab{grid-column:1/-1;padding-block-end:.1rem}
+  .crow .c1{border-inline-start:0}
+  .crow.head .lab{display:none}
+  .nrow{grid-template-columns:minmax(0,1fr) auto}
+  .nrow .w{grid-column:1/-1}
+}
+
+/* footer */
+.foot{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;display:grid;gap:.75rem;color:var(--muted);font-size:.9rem;line-height:1.75}
+.foot p{margin:0;max-width:46rem}
+
+@media (prefers-reduced-motion:reduce){
+  .flash-in,.chev,.qbar i,.emeter i,.leaves>li{transition:none}
+}
+</style>
+</head>
+<body>
+<div id="app" dir="rtl" lang="ar">
+  <header class="mast wrap">
+    <p class="eyebrow">تجاري ١ · المحاضرة الأولى · صفحات الكتاب ١٩–٢٤</p>
+    <h1 class="title"><span class="hl">موضوع الحقوق التجارية</span></h1>
+    <p class="lede">خريطة للمحاضرة، وحفظ حرفي للتعاريف والمواد، وبطاقات، واختبار، وأسئلة مقالية. كل معلومة هنا من نص المحاضرة فقط، وبجانبها رقم صفحتها في الكتاب.</p>
+    <ul class="stats" id="stats" aria-label="التقدم">
+      <li>بطاقات متقنة: <b>٠</b> من ٤٢</li>
+      <li>نصوص محفوظة: <b>٠</b> من ١٠</li>
+      <li>أفضل اختبار: <b>—</b></li>
+      <li>أسئلة مقالية مُنجزة: <b>٠</b> من ٦</li>
+    </ul>
+    <div class="row" id="install" hidden><button type="button" class="btn sm primary" id="install-btn">تثبيت التطبيق على الهاتف</button></div>
+  </header>
+
+  <div id="tabs-anchor"></div>
+  <nav class="tabs" aria-label="أقسام التطبيق">
+    <div class="tabs-in wrap" role="tablist">
+      <button type="button" class="tab" role="tab" id="t-map" data-tab="map" aria-controls="p-map" aria-selected="true">الخريطة</button>
+      <button type="button" class="tab" role="tab" id="t-verbatim" data-tab="verbatim" aria-controls="p-verbatim" aria-selected="false" tabindex="-1">حفظ حرفي</button>
+      <button type="button" class="tab" role="tab" id="t-cards" data-tab="cards" aria-controls="p-cards" aria-selected="false" tabindex="-1">البطاقات</button>
+      <button type="button" class="tab" role="tab" id="t-quiz" data-tab="quiz" aria-controls="p-quiz" aria-selected="false" tabindex="-1">الاختبار</button>
+      <button type="button" class="tab" role="tab" id="t-essay" data-tab="essay" aria-controls="p-essay" aria-selected="false" tabindex="-1">مقالي</button>
+      <button type="button" class="tab" role="tab" id="t-compare" data-tab="compare" aria-controls="p-compare" aria-selected="false" tabindex="-1">مقارنات</button>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <!-- ========== MAP ========== -->
+    <section class="panel" id="p-map" role="tabpanel" aria-labelledby="t-map">
+      <div class="phead">
+        <h2>خريطة المحاضرة</h2>
+        <p>نص المحاضرة في الملف ثلاثة أقسام، والثالث ينقطع في آخر ص ٢٤ حيث ينتهي الملف. في «وضع التسميع» تُخفى التفاصيل وتبقى العناوين، ثم يُكشف كل سطر بالضغط عليه.</p>
+        <div class="tools">
+          <button type="button" class="btn" id="map-recite" aria-pressed="false">وضع التسميع</button>
+          <button type="button" class="btn ghost" id="map-toggle">طيّ الكل</button>
+        </div>
+      </div>
+      <p class="recite-hint">التفاصيل مخفية. استرجع ما تحت كل عنوان من الذاكرة، ثم اضغط على السطر لكشفه.</p>
+
+      <p class="root-node"><span class="kicker">أولاً</span> موضوع الحقوق التجارية <span class="pg">ص ١٩–٢٤</span></p>
+
+      <ol class="tree">
+        <li class="sec">
+          <details open>
+            <summary><span class="sec-n">١</span><span class="sec-t">تعريف القانون التجاري</span><span class="pg">ص ١٩–٢٠</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <div class="sec-body">
+              <div class="grp">
+                <h3>التعريف، بإجماع علماء القانون <span class="pg">ص ١٩</span></h3>
+                <ul class="leaves">
+                  <li>فرع من فروع <b class="m">القانون الخاص</b></li>
+                  <li>يشمل مجموع القواعد القانونية التي تنظم وجهاً من أوجه النشاط الإنساني هو <b class="m">النشاط التجاري</b></li>
+                  <li>تُطبَّق على فئة معينة من الأشخاص هم <b class="m">التجار</b></li>
+                </ul>
+              </div>
+              <div class="grp">
+                <h3>نطاقه يتحدد وفقاً لأمرين <span class="pg">ص ١٩</span></h3>
+                <ul class="leaves">
+                  <li>تعيين مفهوم <b class="m">الأعمال التجارية</b>، من جهة</li>
+                  <li>تحديد <b class="m">المقصود بالتاجر</b>، من جهة أخرى</li>
+                  <li>وهذا ما عبّرت عنه <b class="m">المادة الأولى</b> من القانون التجاري السوري الجديد رقم /٣٣/ تاريخ ٢٠٠٧/١٢/٢٧: القواعد المختصة بالأعمال التجارية التي يقوم بها أي شخص مهما كانت صفته القانونية، والأحكام التي تطبق على الأشخاص الذين اتخذوا التجارة مهنة</li>
+                </ul>
+              </div>
+              <div class="grp">
+                <h3>ليس هو الفرع الأصيل <span class="pg">ص ١٩–٢٠</span></h3>
+                <ul class="leaves">
+                  <li>الفرع الأصيل هو <b class="m">القانون المدني</b>، وهو الأساس العريض لسائر فروع القانون الخاص</li>
+                  <li>يضع القواعد العامة التي تنظم علاقات الأفراد بغض النظر عن طبيعة نشاطهم أو مهنتهم، فهو <b class="m">«الشريعة العامة»</b> لروابط الأفراد</li>
+                  <li>نصوصه تتضمن المبادئ الأساسية العامة التي يستند إليها المنطق القانوني</li>
+                  <li>دراسة التجاري ترتكز على معرفة ضرورية بقواعد المدني، وعلى الأخص <b class="m">قانون الالتزام</b>: حجر الزاوية لقواعد المدني والتجاري معاً</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </li>
+
+        <li class="sec">
+          <details open>
+            <summary><span class="sec-n">٢</span><span class="sec-t">علاقة القانون التجاري مع باقي القوانين الأخرى</span><span class="pg">ص ٢٠–٢١</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <div class="sec-body">
+              <div class="grp">
+                <h3>تقسيم علم القانون <span class="pg">ص ٢٠</span></h3>
+                <ul class="leaves">
+                  <li><b class="m">القانون العام</b>: يبحث في تنظيم السلطات العامة، وفي علاقة هذه السلطات والقائمين عليها بالأفراد</li>
+                  <li><b class="m">القانون الخاص</b>: يهدف إلى تنظيم علاقات الأفراد مع بعضهم البعض، ويُقسم إلى المدني والتجاري</li>
+                  <li class="lv2">المدني: علاقات الأفراد ببعضهم دون النظر إلى صفتهم وطبيعة أعمالهم</li>
+                  <li class="lv2">التجاري: يقتصر على الأعمال التجارية، أو على فئة التجار</li>
+                  <li>علاقات الأفراد في الأعمال التجارية لا تنظمها أحكام القانون الخاص فقط، بل تتعداها أحياناً إلى <b class="m">أحكام القانون العام</b></li>
+                </ul>
+              </div>
+              <div class="grp">
+                <h3>مع القانون الإداري <small>(من أقسام القانون العام)</small> <span class="pg">ص ٢١</span></h3>
+                <ul class="leaves">
+                  <li>قوانين تقيد <b class="m">حرية التعاقد</b> وتضع <b class="m">قواعد آمرة</b> يجب على الأطراف احترامها</li>
+                  <li>تحدد أسعار السلع والخدمات، وتنظم التجارة الداخلية والخارجية</li>
+                  <li>تفرض الرقابة على الاستيراد والتصدير، <b class="m">كقانون الغرف التجارية</b></li>
+                </ul>
+              </div>
+              <div class="grp">
+                <h3>مع القانون الدولي الخاص <span class="pg">ص ٢١</span></h3>
+                <ul class="leaves">
+                  <li>التجارة لا تقتصر على أشخاص تابعين لجنسية واحدة يقطنون ضمن حدود دولة واحدة</li>
+                  <li>الأعمال التجارية كثيراً ما تتم بين بلد وآخر، والأشخاص كثيراً ما يقومون بأعمال تجارية خارج بلدهم</li>
+                  <li>فتنشأ اختلافات في القوانين الواجب تطبيقها، يُرجع في حلها إلى <b class="m">القانون الدولي الخاص</b></li>
+                </ul>
+              </div>
+              <div class="grp">
+                <h3>مع قانون العقوبات <span class="pg">ص ٢١</span></h3>
+                <ul class="leaves">
+                  <li>بعض الأعمال التجارية أو تصرفات من اتخذوها مهنة قد تكون سبباً <b class="m">لملاحقات جزائية</b>، يُرجع فيها إلى أحكام قانون العقوبات الزجرية</li>
+                  <li>الاحتيال · إساءة الائتمان · الإفلاس التقصيري · الإفلاس الاحتيالي · إصدار الشيكات بدون رصيد</li>
+                </ul>
+              </div>
+              <div class="grp">
+                <h3>مع القانون المدني <span class="pg">ص ٢١</span></h3>
+                <ul class="leaves">
+                  <li>القانون التجاري يخضع في كثير من نواحيه <b class="m">لسيطرة القانون المدني</b></li>
+                  <li>نشأ ذلك منذ أن <b class="m">قُنِّنت الأعراف التجارية</b></li>
+                  <li>إذ شرع فقهاء القانون التجاري يفسرون بعض المؤسسات القانونية ذات الصفة التجارية مستعينين بالقواعد العامة التي تحكم بعض المؤسسات ذات الصفة المدنية</li>
+                </ul>
+                <p class="note"><span class="note-k">حيلة حفظ</span><span class="note-t">إداري · دولي خاص · عقوبات · مدني = «ادعم»</span></p>
+              </div>
+            </div>
+          </details>
+        </li>
+
+        <li class="sec">
+          <details open>
+            <summary><span class="sec-n">٣</span><span class="sec-t">ضرورة استقلال القانون التجاري عن القانون المدني</span><span class="pg">ص ٢١–٢٤</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <div class="sec-body">
+              <div class="grp">
+                <h3>تباينت وجهات النظر حول الدمج <span class="pg">ص ٢١–٢٢</span></h3>
+                <ul class="leaves">
+                  <li>رأي: <b class="m">لم يعد هنالك حاجة</b> لإيجاد قوانين تجارية مستقلة عن القوانين المدنية <span class="fn">حاشية ١: فيفانت · لاكور وبوترون</span></li>
+                  <li>حجتهم: المعاملات تكون تارة ذات صفة تجارية وتارة ذات صفة مدنية، «ثم عدل عن رأيه»</li>
+                  <li>فقيه آخر انتقد الدمج <span class="fn">حاشية ٢: إيسكارا</span> مستنداً إلى <b class="m">قانون الموجبات السويسري</b>: تضمّن أحكاماً مدنية وتجارية على السواء، ولم يقضِ البتة على استقلال قانون التجارة، إذ بقيت أحكام التجارة مستقلة ضمن القانون الواحد</li>
+                  <li>أصحاب هذا الرأي يعزون ذاتية القانون التجاري واستقلاله إلى <b class="m">الاختلاف الجذري</b> بين طبيعة المعاملات المدنية والتجارية، ويتجلى في ظاهرتين:</li>
+                </ul>
+              </div>
+              <div class="grp deep">
+                <h3>الظاهرة الأولى: السرعة <span class="pg">ص ٢٢–٢٣</span></h3>
+                <ul class="leaves">
+                  <li>المدنية: <b class="m">انتفاء فكرة المضاربة</b> أو على الأقل الدور الذي تلعبه؛ وتصرفات الفرد غالباً بقصد الحفاظ على رأس ماله لا بنية تحقيق الربح</li>
+                  <li>المدنية: الحذر والحرص الشديدين، والرؤية والتبصر؛ قوامها <b class="m">الثبات والاستقرار</b>؛ ولها شكلية خاصة في الإثبات</li>
+                  <li>التجارية: هدفها <b class="m">تحقيق الربح</b> وسبيلها المضاربة عن طريق تداول الثروات</li>
+                  <li>التجارية: تستند إلى العادات والأعراف ولا تنتظر النصوص؛ تتميز <b class="m">بالتكرار والاستمرار</b>؛ ومنها ما يرد على منقولات معرضة لتقلبات الأسعار أو قابلة للتلف</li>
+                  <li>فعامل السرعة يستلزم قواعد قانونية خاصة: <b class="m">حرية الإثبات</b> في المواد التجارية</li>
+                  <li class="lv2">المدني: الإثبات الكتابي في الالتزامات التعاقدية التي تزيد عن (٥٠٠) ليرة سورية أو غير محددة القيمة <span class="art">م /٥٤/ بينات</span></li>
+                  <li class="lv2">التجاري: حرّ لا يتقيد بأي قيد، بشهادة الشهود والقرائن وجميع الطرق <span class="art">م ١٠٤-١٠٥ تجاري</span></li>
+                </ul>
+              </div>
+              <div class="grp deep">
+                <h3>الظاهرة الثانية: الائتمان <span class="pg">ص ٢٣–٢٤</span></h3>
+                <ul class="leaves">
+                  <li>الائتمان: <b class="m">منح المدين أجلاً للوفاء</b>، وهو الدعامة الثانية للحياة التجارية</li>
+                  <li>مثاله: البائع يمنح التاجر أجلاً للوفاء، والمصرف يقرض المشتري على أن يسدد بعد بيع البضائع</li>
+                  <li>روابط متتابعة قوامها الائتمان أو الثقة المتبادلة؛ وإخلال أحدهم بها يؤدي إلى سلسلة طويلة من الاضطرابات</li>
+                  <li>وقد دعمه القانون التجاري:</li>
+                  <li class="lv2"><b class="m">بالزيادة في ضمانات الدائن التجاري</b>، بفرض عقوبات صارمة على من يخل بالائتمان التجاري عن طريق تطبيق نظام الإفلاس على التاجر المتوقف عن سداد ديونه التجارية في مواعيد استحقاقها: تصفية أمواله وتوزيع الناتج على الدائنين كلٌّ بنسبة حقه</li>
+                  <li class="lv2">كما يتمثل دعم الائتمان في <b class="m">افتراض التضامن</b> بين المدينين المتعددين بدين تجاري دون اتفاق صريح أو نص <span class="art">م ١١٠ تجاري</span></li>
+                  <li class="lv2">وتصل قوة هذا الدعم إلى حدّ <b class="m">منع</b> التاجر المدين المفلس من إدارة أمواله والتصرف بها، وحرمانه من بعض حقوقه المدنية والسياسية <span class="art">م ٤٥٣-٤٥٤ تجاري</span></li>
+                </ul>
+                <p class="note"><span class="note-k">حيلة حفظ</span><span class="note-t">إفلاس · تضامن · منع = «أتمّ»</span></p>
+              </div>
+              <div class="grp">
+                <h3>أنصار الدمج: لم تقنعهم السرعة والائتمان، وأسبابهم <span class="pg">ص ٢٤</span></h3>
+                <ol class="leaves">
+                  <li>التطورات الاقتصادية والاجتماعية والسياسية جعلت معظم الأفراد يقومون بمعاملات تجارية (الحسابات الجارية، الاعتمادات، الأسهم في الشركات المساهمة، الأسناد التجارية)، فيجب إخضاعها إلى <b class="m">أحكام واحدة</b> سواء قام بها تاجر أم شخص عادي</li>
+                  <li>ميزات المعاملات التجارية من سرعة وسهولة وضمان الثقة يجب أن يستفيد منها <b class="m">جميع الناس</b> بما فيهم غير التاجر</li>
+                  <li>بعض الدول: إنكلترا أخضعت التجار وغير التجار إلى الحقوق العامة common law · إيطاليا أصدرت عام ١٩٤٢ قانوناً موحداً (الأحكام المشتركة للالتزامات، مع مباحث خاصة بالمؤسسات التجارية وأسناد الائتمان وسجل التجارة) · سويسرا التي أصدرت قانوناً… <span class="cut">ينقطع النص هنا في آخر ص ٢٤</span></li>
+                </ol>
+                <p class="note"><span class="note-k">حيلة حفظ</span><span class="note-t">تطورات · ميزات · دول = «تمدّ»</span></p>
+              </div>
+            </div>
+          </details>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ========== VERBATIM ========== -->
+    <section class="panel" id="p-verbatim" role="tabpanel" aria-labelledby="t-verbatim" hidden>
+      <div class="phead">
+        <h2>الحفظ الحرفي</h2>
+        <p>عشرة نصوص قصيرة تُحفظ بألفاظها: تعاريف ومواد وقواعد. التدريب على أربع درجات من القراءة حتى التسميع الكامل، ومع كل نص اختبار كتابي يُصحَّح كلمةً كلمة.</p>
+      </div>
+      <div class="vtop">
+        <div class="seg" id="v-modes" role="radiogroup" aria-label="درجة التدريب"></div>
+        <p class="vcount" id="v-count"></p>
+      </div>
+      <div class="vlist" id="v-list"></div>
+    </section>
+
+    <!-- ========== CARDS ========== -->
+    <section class="panel" id="p-cards" role="tabpanel" aria-labelledby="t-cards" hidden>
+      <div class="phead">
+        <h2>البطاقات</h2>
+        <p>سؤال على الوجه، وجوابه من النص على الظهر. البطاقة التي لم تعرفها تعود بعد ثلاث بطاقات، والتي تعرفها في جولتين تصبح متقنة.</p>
+      </div>
+      <div class="chips" id="c-decks" role="group" aria-label="مجموعة البطاقات"></div>
+      <div class="lbox"><div class="lbar" id="c-bar"></div><div class="legend" id="c-legend"></div></div>
+      <div id="c-stage"></div>
+      <div class="cctrl" id="c-ctrl">
+        <button type="button" class="btn warn" id="c-no">لم أعرفها</button>
+        <button type="button" class="btn primary" id="c-yes">عرفتها</button>
+      </div>
+      <p class="cmeta" id="c-count"></p>
+    </section>
+
+    <!-- ========== QUIZ ========== -->
+    <section class="panel" id="p-quiz" role="tabpanel" aria-labelledby="t-quiz" hidden>
+      <div class="phead">
+        <h2>الاختبار</h2>
+        <p>اختيار من متعدد، وصح أو خطأ. بعد كل إجابة يظهر موضعها في النص ورقم الصفحة. على الحاسوب: الأرقام ١–٤ للإجابة.</p>
+      </div>
+      <div id="quiz-root"></div>
+    </section>
+
+    <!-- ========== ESSAY ========== -->
+    <section class="panel" id="p-essay" role="tabpanel" aria-labelledby="t-essay" hidden>
+      <div class="phead">
+        <h2>الأسئلة المقالية</h2>
+        <p>اكتب الإجابة كما في الامتحان، ثم قارنها بعناصر الإجابة من النص. العنصر الذي تُرصد كلماته في إجابتك يُعلَّم تلقائياً، والعلامات قابلة للتعديل يدوياً.</p>
+      </div>
+      <div class="egrid">
+        <div class="elist" id="e-list"></div>
+        <div id="e-work"></div>
+      </div>
+    </section>
+
+    <!-- ========== COMPARE ========== -->
+    <section class="panel" id="p-compare" role="tabpanel" aria-labelledby="t-compare" hidden>
+      <div class="phead">
+        <h2>المقارنات والأرقام</h2>
+        <p>ما يختلط عادةً في هذه المحاضرة، جنباً إلى جنب.</p>
+      </div>
+
+      <div class="ctab">
+        <h3>المعاملات المدنية والمعاملات التجارية <span class="pg">ص ٢٢–٢٣</span></h3>
+        <div class="crow head"><div class="lab"></div><div class="c c1">المعاملات المدنية</div><div class="c">المعاملات التجارية</div></div>
+        <div class="crow"><div class="lab">الهدف</div><div class="c c1">غالباً بقصد الحفاظ على رأس المال لا بنية تحقيق الربح؛ وما يهم الفرد عدم الانتقاص من ذمته المالية</div><div class="c">تحقيق الربح</div></div>
+        <div class="crow"><div class="lab">المضاربة</div><div class="c c1">انتفاء فكرة المضاربة، أو على الأقل الدور الذي تلعبه</div><div class="c">سبيلها المضاربة عن طريق تداول الثروات</div></div>
+        <div class="crow"><div class="lab">طابع التصرفات</div><div class="c c1">يحيطها الحذر والحرص الشديدين، وتحكمها الرؤية والتبصر</div><div class="c">تتميز بالتكرار والاستمرار، ومنها ما يرد على منقولات معرضة لتقلبات الأسعار أو قابلة للتلف فيجب إبرامها بسرعة</div></div>
+        <div class="crow"><div class="lab">قوامها</div><div class="c c1">الثبات والاستقرار</div><div class="c"><span class="none">لم يذكر النص مقابلاً مباشراً.</span> وفي الائتمان: يرتبط التجار بروابط متتابعة قوامها الائتمان أو الثقة المتبادلة بينهم <span class="pg">ص ٢٣</span></div></div>
+        <div class="crow"><div class="lab">مصدر قواعدها</div><div class="c c1"><span class="none">لم يذكر النص مقابلاً</span></div><div class="c">العادات والأعراف، ولا تنتظر النصوص القانونية</div></div>
+        <div class="crow"><div class="lab">الإثبات</div><div class="c c1">شكلية خاصة: وجوب الإثبات الكتابي في الالتزامات التعاقدية التي تزيد قيمتها عن (٥٠٠) ليرة سورية أو كانت غير محددة القيمة <span class="art">م /٥٤/ بينات</span></div><div class="c">حرّ لا يتقيد بأي قيد: شهادة الشهود والقرائن وجميع طرق الإثبات الأخرى <span class="art">م ١٠٤-١٠٥ تجاري</span></div></div>
+      </div>
+
+      <div class="ctab">
+        <h3>القانون العام والقانون الخاص <span class="pg">ص ٢٠–٢١</span></h3>
+        <div class="crow head"><div class="lab"></div><div class="c c1">القانون العام</div><div class="c">القانون الخاص</div></div>
+        <div class="crow"><div class="lab">موضوعه</div><div class="c c1">تنظيم السلطات العامة، وعلاقة هذه السلطات والقائمين عليها بالأفراد</div><div class="c">تنظيم علاقات الأفراد مع بعضهم البعض</div></div>
+        <div class="crow"><div class="lab">أقسامه في النص</div><div class="c c1">من أقسامه القانون الإداري <span class="pg">ص ٢١</span></div><div class="c">القانون المدني، والقانون التجاري</div></div>
+      </div>
+
+      <div class="ctab">
+        <h3>القانون المدني والقانون التجاري <span class="pg">ص ١٩–٢١</span></h3>
+        <div class="crow head"><div class="lab"></div><div class="c c1">القانون المدني</div><div class="c">القانون التجاري</div></div>
+        <div class="crow"><div class="lab">مجاله</div><div class="c c1">علاقات الأفراد ببعضهم دون النظر إلى صفتهم وطبيعة أعمالهم</div><div class="c">نوع خاص من الأعمال هي الأعمال التجارية، أو فئة معينة من الأشخاص هي فئة التجار</div></div>
+        <div class="crow"><div class="lab">مكانته</div><div class="c c1">الفرع الأصيل، والأساس العريض لسائر فروع القانون الخاص، و«الشريعة العامة» لروابط الأفراد</div><div class="c">فرع من فروع القانون الخاص، وليس هو الفرع الأصيل</div></div>
+        <div class="crow"><div class="lab">العلاقة بينهما</div><div class="c c1">دراسة التجاري ترتكز على معرفة ضرورية بقواعده، وعلى الأخص قانون الالتزام</div><div class="c">يخضع في كثير من نواحيه لسيطرة القانون المدني منذ أن قُنِّنت الأعراف التجارية <span class="pg">ص ٢١</span></div></div>
+      </div>
+
+      <div class="ctab">
+        <h3>الدمج أم الاستقلال؟ <span class="pg">ص ٢١–٢٤</span></h3>
+        <div class="crow head"><div class="lab"></div><div class="c c1">أنصار الدمج</div><div class="c">رأي الاستقلال</div></div>
+        <div class="crow"><div class="lab">الموقف</div><div class="c c1">لم يعد هنالك حاجة لإيجاد قوانين تجارية مستقلة عن القوانين المدنية</div><div class="c">للقانون التجاري ذاتية واستقلال</div></div>
+        <div class="crow"><div class="lab">الحجة</div><div class="c c1">المعاملات تكون تارة ذات صفة تجارية وتارة ذات صفة مدنية</div><div class="c">الاختلاف الجذري بين طبيعة المعاملات المدنية والتجارية، ويتجلى في السرعة والائتمان</div></div>
+        <div class="crow"><div class="lab">الرد على الآخر</div><div class="c c1">لم تقنعهم السرعة والائتمان، وبرروا موقفهم بالأسباب التالية: التطورات الاقتصادية والاجتماعية والسياسية، والميزات التي يجب أن يستفيد منها جميع الناس، وأمثلة بعض الدول <span class="cut">ينقطع النص عند الثالث في آخر ص ٢٤</span></div><div class="c">قانون الموجبات السويسري تضمّن الأحكام المدنية والتجارية، ولم يقضِ البتة على استقلال قانون التجارة</div></div>
+        <div class="crow"><div class="lab">الحواشي</div><div class="c c1">فيفانت (١٨٩٣) · لاكور وبوترون (١٩٢٥)</div><div class="c">إيسكارا (١٩٣٤)</div></div>
+        <p class="ins"><b>لاحظ:</b> سويسرا تَرِد في الجهتين. منتقد الدمج يستند إلى قانون الموجبات السويسري، وأنصار الدمج يذكرون سويسرا بين الدول التي أصدرت قانوناً، والنص ينقطع عندها في آخر ص ٢٤.</p>
+      </div>
+
+      <div class="ctab">
+        <h3>كل المواد والأرقام في المحاضرة</h3>
+        <div class="nrow"><span class="n">القانون رقم /٣٣/ تاريخ ٢٠٠٧/١٢/٢٧</span><span class="w">القانون التجاري السوري الجديد</span><span class="pg">ص ١٩</span></div>
+        <div class="nrow"><span class="n">المادة الأولى منه</span><span class="w">يتضمن القواعد المختصة بالأعمال التجارية التي يقوم بها أي شخص، والأحكام التي تطبق على من اتخذوا التجارة مهنة</span><span class="pg">ص ١٩</span></div>
+        <div class="nrow"><span class="n">(٥٠٠) ليرة سورية</span><span class="w">ما يزيد عنها في الالتزامات التعاقدية المدنية، أو كان غير محدد القيمة، يجب إثباته كتابةً</span><span class="pg">ص ٢٣</span></div>
+        <div class="nrow"><span class="n">م /٥٤/ قانون البينات</span><span class="w">القاعدة العامة للإثبات في المواد المدنية: وجوب الإثبات الكتابي</span><span class="pg">ص ٢٣</span></div>
+        <div class="nrow"><span class="n">م ١٠٤-١٠٥ تجاري</span><span class="w">الإثبات في المواد التجارية حرّ لا يتقيد بأي قيد</span><span class="pg">ص ٢٣</span></div>
+        <div class="nrow"><span class="n">م ١١٠ تجاري</span><span class="w">افتراض التضامن بين المدينين المتعددين بدين تجاري</span><span class="pg">ص ٢٤</span></div>
+        <div class="nrow"><span class="n">م ٤٥٣-٤٥٤ تجاري</span><span class="w">منع التاجر المدين المفلس من إدارة أمواله والتصرف بها، وحرمانه من بعض حقوقه المدنية والسياسية</span><span class="pg">ص ٢٤</span></div>
+        <div class="nrow"><span class="n">١٩٤٢</span><span class="w">إيطاليا تصدر قانوناً موحداً تضمّن الأحكام المشتركة للالتزامات</span><span class="pg">ص ٢٤</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot wrap">
+    <p>المصدر الوحيد لهذا التطبيق ملف «تجاري 1 المحاضرة الأولى»، صفحات الكتاب ١٩–٢٤: من «أولاً- موضوع الحقوق التجارية» حيث تبدأ المحاضرة، حتى آخر ص ٢٤ عند «وسويسرا التي أصدرت قانوناً» حيث ينتهي الملف. الملاحظات المكتوبة بخط اليد في الملف غير مشمولة.</p>
+    <p>«حيل الحفظ» مساعدات للتذكر فقط، وليست من النص. التقدم والمسودات تُحفظ على هذا الجهاز وحده.</p>
+    <p>بعد أول فتح يعمل التطبيق دون إنترنت، ويمكن إضافته إلى الشاشة الرئيسية للهاتف.</p>
+    <div class="row">
+      <button type="button" class="btn sm ghost" id="reset">مسح التقدم</button>
+      <span class="row" id="reset-confirm" hidden>
+        <span>سيُمسح تقدم البطاقات والحفظ والاختبار والمسودات من هذا الجهاز.</span>
+        <button type="button" class="btn sm warn" id="reset-yes">مسح</button>
+        <button type="button" class="btn sm ghost" id="reset-no">إلغاء</button>
+      </span>
+    </div>
+  </footer>
+</div>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,el){return (el||document).querySelector(s);};
+var $$=function(s,el){return Array.prototype.slice.call((el||document).querySelectorAll(s));};
+var DIG='٠١٢٣٤٥٦٧٨٩';
+function AR(n){return String(n).replace(/[0-9]/g,function(d){return DIG[+d];});}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+try{document.documentElement.lang='ar';document.documentElement.dir='rtl';}catch(e){}
+
+/* ---------- storage (per device, optional) ---------- */
+var KEY='tijari1-lec1-v1';
+var store={};
+try{store=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){store={};}
+function normalizeStore(){
+  if(!store||typeof store!=='object'||Array.isArray(store))store={};
+  ['cards','verb','essay','essayCov'].forEach(function(k){if(!store[k]||typeof store[k]!=='object')store[k]={};});
+  if(typeof store.quizBest!=='number')store.quizBest=null;
+  if(['read','cloze','initials','recite'].indexOf(store.vmode)<0)store.vmode='read';
+}
+normalizeStore();
+var saveTimer=0;
+function save(){clearTimeout(saveTimer);saveTimer=setTimeout(function(){try{localStorage.setItem(KEY,JSON.stringify(store));}catch(e){}},150);}
+
+/* ---------- text helpers ---------- */
+function mk(x){return x.replace(/\[\[(.+?)\]\]/g,'<b class="m">$1</b>');}
+function strip(x){return x.replace(/\[\[|\]\]/g,'');}
+function norm(s){
+  return String(s)
+    .replace(/[ؐ-ًؚ-ٰٟۖ-ۭ]/g,'')
+    .replace(/ـ/g,'')
+    .replace(/[أإآٱ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/ؤ/g,'و').replace(/ئ/g,'ي')
+    .replace(/[٠-٩]/g,function(d){return String(d.charCodeAt(0)-0x660);})
+    .replace(/[۰-۹]/g,function(d){return String(d.charCodeAt(0)-0x6F0);})
+    .replace(/[^\p{L}\p{N}]+/gu,' ')
+    .trim();
+}
+
+/* ================= DATA (from the lecture text only) ================= */
+var VERB=[
+{id:'v1',p:'١٩',t:'تعريف القانون التجاري',
+ x:'أجمع علماء القانون بأن القانون التجاري هو فرع من فروع [[القانون الخاص]] وأنه يشمل [[مجموع القواعد القانونية]] التي تنظم وجها من أوجه [[النشاط الإنساني]] هو [[النشاط التجاري]] والتي تطبق على [[فئة معينة من الأشخاص]] هم [[التجار]].'},
+{id:'v2',p:'١٩',t:'نطاق القانون التجاري',
+ x:'ويتضح من هذا التعريف أن نطاق القانون التجاري يتحدد وفقاً لتعيين [[مفهوم الأعمال التجارية]] من جهة ولتحديد [[المقصود بالتاجر]] من جهة أخرى.'},
+{id:'v3',p:'١٩',t:'نص المادة الأولى من القانون التجاري السوري رقم /٣٣/ تاريخ ٢٠٠٧/١٢/٢٧',
+ x:'«يتضمن هذا القانون من جهة [[القواعد المختصة بالأعمال التجارية]] التي يقوم بها [[أي شخص]] مهما كانت [[صفته القانونية]] ويتضمن من جهة أخرى [[الأحكام]] التي تطبق على [[الأشخاص الذين اتخذوا التجارة مهنة]]».'},
+{id:'v4',p:'١٩',t:'القانون المدني هو الفرع الأصيل',
+ x:'والقانون التجاري، كفرع من فروع القانون الخاص، ليس هو [[الفرع الأصيل]]. فالأصيل هو [[القانون المدني]] وهذا الذي يعتبر في الحقيقة [[الأساس العريض]] لسائر فروع القانون الخاص.'},
+{id:'v5',p:'٢٠',t:'قانون الالتزام حجر الزاوية',
+ x:'لذلك فإن دراسة قواعد القانون التجاري ترتكز في المحل الأول على [[معرفة ضرورية]] بقواعد [[القانون المدني]] وعلى الأخص [[قانون الالتزام]] فهو [[حجر الزاوية]] ليس فقط لقواعد القانون المدني بل وأيضاً لقواعد القانون التجاري.'},
+{id:'v6',p:'٢٠',t:'القانون العام والقانون الخاص',
+ x:'فالقانون العام يبحث في تنظيم [[السلطات العامة]] وفي علاقة هذه السلطات والقائمين عليها [[بالأفراد]]. بينما يهدف القانون الخاص إلى تنظيم [[علاقات الأفراد مع بعضهم البعض]]. ويقسم القانون الخاص إلى قسمين: [[القانون المدني والقانون التجاري]].'},
+{id:'v7',p:'٢٣',t:'هدف المعاملات التجارية',
+ x:'أما المعاملات التجارية فتحكمها [[اعتبارات مغايرة]] وغايات مختلفة إذ أن هدفها هو [[تحقيق الربح]] وسبيلها إلى ذلك [[المضاربة]] عن طريق [[تداول الثروات]].'},
+{id:'v8',p:'٢٣',t:'قاعدة الإثبات في المواد المدنية والتجارية',
+ x:'القاعدة العامة للإثبات في المواد المدنية هي وجوب [[الإثبات الكتابي]] في الالتزامات التعاقدية التي تزيد قيمتها عن [[(٥٠٠) ليرة سورية]] أو كانت [[غير محددة القيمة]]، [[مادة /٥٤/ من قانون البينات]]، بينما الإثبات في المواد التجارية [[حرّ لا يتقيد بأي قيد]] [[(مادة ١٠٤-١٠٥)]] من القانون التجاري.'},
+{id:'v9',p:'٢٣',t:'تعريف الائتمان',
+ x:'الائتمان يعني [[منح المدين أجلاً للوفاء]]. لذلك فإن الائتمان هو [[الدعامة الثانية]] للحياة التجارية.'},
+{id:'v10',p:'٢٤',t:'افتراض التضامن',
+ x:'كما يتمثل دعم الائتمان في [[افتراض التضامن]] بين [[المدينين المتعددين]] بدين تجاري دونما حاجة إلى [[اتفاق صريح أو نص في القانون]] [[(المادة ١١٠ قانون تجاري)]].'}
+];
+
+var DECKS=[['all','الكل'],['def','تعاريف'],['num','مواد وأرقام'],['list','تعداد'],['idea','مفاهيم']];
+var CARDS=[
+{id:'c01',d:'def',p:'١٩',q:'ما تعريف القانون التجاري الذي أجمع عليه علماء القانون؟',
+ a:'فرع من فروع <b class="m">القانون الخاص</b>، يشمل مجموع القواعد القانونية التي تنظم وجهاً من أوجه النشاط الإنساني هو <b class="m">النشاط التجاري</b>، وتطبق على فئة معينة من الأشخاص هم <b class="m">التجار</b>.'},
+{id:'c02',d:'list',p:'١٩',q:'وفقاً لأي أمرين يتحدد نطاق القانون التجاري؟',
+ a:'١- تعيين مفهوم <b class="m">الأعمال التجارية</b>، من جهة.<br>٢- تحديد <b class="m">المقصود بالتاجر</b>، من جهة أخرى.'},
+{id:'c03',d:'num',p:'١٩',q:'ما رقم القانون التجاري السوري الجديد وما تاريخه؟',
+ a:'رقم <b class="m">/٣٣/</b> تاريخ <b class="m">٢٠٠٧/١٢/٢٧</b>.'},
+{id:'c04',d:'num',p:'١٩',q:'ماذا يتضمن القانون التجاري بحسب مادته الأولى؟',
+ a:'من جهة: القواعد المختصة بالأعمال التجارية التي يقوم بها <b class="m">أي شخص مهما كانت صفته القانونية</b>.<br>ومن جهة أخرى: الأحكام التي تطبق على <b class="m">الأشخاص الذين اتخذوا التجارة مهنة</b>.'},
+{id:'c05',d:'idea',p:'١٩',q:'هل القانون التجاري هو الفرع الأصيل من فروع القانون الخاص؟',
+ a:'لا. الفرع الأصيل هو <b class="m">القانون المدني</b>، وهو الأساس العريض لسائر فروع القانون الخاص.'},
+{id:'c06',d:'idea',p:'١٩–٢٠',q:'لماذا يوصف القانون المدني بأنه «الشريعة العامة» لروابط الأفراد؟',
+ a:'لأنه يضع القواعد العامة التي تنظم علاقات الأفراد <b class="m">بغض النظر عن طبيعة هذا النشاط أو عن المهنة</b> التي يمارسونها.'},
+{id:'c07',d:'idea',p:'٢٠',q:'ماذا تتضمن نصوص القانون المدني؟',
+ a:'المبادئ الأساسية العامة التي يستند إليها <b class="m">المنطق القانوني</b> في أي مجال نحتاج فيه إلى منطق القانون.'},
+{id:'c08',d:'idea',p:'٢٠',q:'ما «حجر الزاوية» لقواعد القانون المدني والتجاري معاً؟',
+ a:'<b class="m">قانون الالتزام</b>. ودراسة قواعد القانون التجاري ترتكز في المحل الأول على معرفة ضرورية بقواعد القانون المدني، وعلى الأخص قانون الالتزام.'},
+{id:'c09',d:'list',p:'٢٠',q:'إلى أي قسمين رئيسيين درج علماء القانون على تقسيم علم القانون؟',
+ a:'<b class="m">القانون العام</b> و<b class="m">القانون الخاص</b>.'},
+{id:'c10',d:'def',p:'٢٠',q:'بماذا يبحث القانون العام؟',
+ a:'في تنظيم <b class="m">السلطات العامة</b>، وفي علاقة هذه السلطات والقائمين عليها <b class="m">بالأفراد</b>.'},
+{id:'c11',d:'def',p:'٢٠',q:'إلامَ يهدف القانون الخاص؟ وإلى أي قسمين يُقسم؟',
+ a:'يهدف إلى تنظيم <b class="m">علاقات الأفراد مع بعضهم البعض</b>.<br>ويُقسم إلى: القانون المدني والقانون التجاري.'},
+{id:'c12',d:'idea',p:'٢٠',q:'ما الفرق بين مجال القانون المدني ومجال القانون التجاري؟',
+ a:'المدني: يبحث في علاقات الأفراد ببعضهم <b class="m">دون النظر إلى صفتهم</b> وطبيعة الأعمال التي يقومون بها.<br>التجاري: يقتصر على نوع خاص من الأعمال هي <b class="m">الأعمال التجارية</b>، أو على فئة معينة من الأشخاص هي <b class="m">فئة التجار</b>.'},
+{id:'c13',d:'idea',p:'٢٠',q:'هل تنظم أحكام القانون الخاص وحدها علاقات الأفراد في احترافهم أو تعاطيهم الأعمال التجارية؟',
+ a:'لا. لا تنظمها فقط أحكام القانون الخاص ومنها القانون التجاري، وإنما تتعداها في بعض الأحيان إلى <b class="m">أحكام القانون العام</b>.'},
+{id:'c14',d:'list',p:'٢١',q:'ما القوانين التي بيّن النص صلة القانون التجاري بها؟',
+ a:'١- القانون الإداري<br>٢- القانون الدولي الخاص<br>٣- قانون العقوبات<br>٤- القانون المدني',h:'إداري · دولي خاص · عقوبات · مدني = «ادعم»'},
+{id:'c15',d:'list',p:'٢١',q:'ما مظاهر صلة القانون التجاري بالقانون الإداري؟',
+ a:'قوانين تقيد <b class="m">حرية التعاقد</b> وتضع <b class="m">قواعد آمرة</b> يجب على الأطراف احترامها، وتحدد أسعار السلع والخدمات، وتنظم التجارة الداخلية والخارجية، وتفرض الرقابة على الاستيراد والتصدير، <b class="m">كقانون الغرف التجارية</b>.'},
+{id:'c16',d:'idea',p:'٢١',q:'لماذا يرتبط القانون التجاري بالقانون الدولي الخاص؟',
+ a:'لأن التجارة لا تقتصر على أشخاص تابعين لجنسية واحدة يقطنون ضمن حدود دولة واحدة؛ فالأعمال التجارية كثيراً ما تتم بين بلد وآخر، مما يؤدي إلى اختلافات في <b class="m">القوانين الواجب تطبيقها</b>، ويُرجع في حلها إلى القانون الدولي الخاص.'},
+{id:'c17',d:'list',p:'٢١',q:'عدّد أمثلة العقوبات التي ذكرها النص في رابطة القانون التجاري بقانون العقوبات.',
+ a:'١- الاحتيال<br>٢- إساءة الائتمان<br>٣- الإفلاس التقصيري<br>٤- الإفلاس الاحتيالي<br>٥- إصدار الشيكات بدون رصيد',h:'إفلاسان (تقصيري واحتيالي) + احتيال + إساءة ائتمان + شيك بلا رصيد'},
+{id:'c18',d:'idea',p:'٢١',q:'منذ متى يخضع القانون التجاري لسيطرة القانون المدني؟ وكيف ظهر ذلك؟',
+ a:'منذ أن <b class="m">قُنِّنت الأعراف التجارية</b>؛ إذ شرع فقهاء القانون التجاري يفسرون بعض المؤسسات القانونية ذات الصفة التجارية مستعينين بالقواعد العامة التي تحكم بعض المؤسسات ذات الصفة المدنية.'},
+{id:'c19',d:'idea',p:'٢١–٢٢',q:'ما رأي بعض فقهاء القانون في دمج قانون التجارة بالقانون المدني؟ وما حجتهم؟',
+ a:'رأوا أنه <b class="m">لم يعد هنالك حاجة</b> لإيجاد قوانين تجارية مستقلة عن القوانين المدنية.<br>حجتهم: أن المعاملات تكون <b class="m">تارة ذات صفة تجارية وتارة ذات صفة مدنية</b>. «ثم عدل عن رأيه».'},
+{id:'c20',d:'idea',p:'٢٢',q:'على ماذا استند الفقيه الذي انتقد فكرة الدمج؟',
+ a:'على <b class="m">قانون الموجبات السويسري</b>: وإن تضمن أحكاماً تتعلق بالأمور المدنية والتجارية على السواء، فهو لم يقضِ البتة على استقلال قانون التجارة، إذ بقيت الأحكام المتعلقة بالتجارة <b class="m">مستقلة ضمن القانون الواحد</b>.'},
+{id:'c21',d:'idea',p:'٢٢',q:'إلامَ يعزو أصحاب رأي الاستقلال ذاتيةَ القانون التجاري واستقلاله؟',
+ a:'إلى <b class="m">الاختلاف الجذري</b> بين طبيعة المعاملات المدنية وطبيعة المعاملات التجارية، ويتجلى في ظاهرتين: <b class="m">السرعة</b> و<b class="m">الائتمان</b>.'},
+{id:'c22',d:'idea',p:'٢٢',q:'ما الذي يميز المعاملات المدنية عن المعاملات التجارية؟',
+ a:'<b class="m">انتفاء فكرة المضاربة</b>، أو على الأقل الدور الذي تلعبه.'},
+{id:'c23',d:'idea',p:'٢٢',q:'بأي قصد يدير الفرد أمواله في المعاملات المدنية؟',
+ a:'غالباً بقصد <b class="m">الحفاظ على رأس ماله</b> وليس بنية تحقيق الربح، وما يهمه هو <b class="m">عدم الانتقاص من ذمته المالية</b>.'},
+{id:'c24',d:'list',p:'٢٢',q:'ما صفات المعاملات المدنية؟',
+ a:'يحيطها <b class="m">الحذر والحرص الشديدين</b>، وتحكمها <b class="m">الرؤية والتبصر</b>، وقوامها <b class="m">الثبات والاستقرار</b>، ولها شكلية خاصة في الإثبات.'},
+{id:'c25',d:'def',p:'٢٣',q:'ما هدف المعاملات التجارية؟ وما سبيلها إليه؟',
+ a:'هدفها <b class="m">تحقيق الربح</b>، وسبيلها إلى ذلك <b class="m">المضاربة عن طريق تداول الثروات</b>.'},
+{id:'c26',d:'idea',p:'٢٣',q:'إلامَ يستند النشاط التجاري؟ وهل ينتظر النصوص القانونية؟',
+ a:'يستند إلى <b class="m">العادات والأعراف</b> قديمه وحديثه، ولا ينتظر النصوص القانونية؛ إذ سرعان ما يبتدع التجار ما يحتاجون إليه من قواعد يلتزمون بها جميعاً، ويحترمونها فيما بينهم احترام القانون دونما حاجة إلى تدخل صريح من جانب المشرع بنص مكتوب.'},
+{id:'c27',d:'idea',p:'٢٣',q:'بماذا يتميز النشاط التجاري؟',
+ a:'<b class="m">بالتكرار والاستمرار</b>.'},
+{id:'c28',d:'idea',p:'٢٣',q:'لماذا يجب إبرام بعض المعاملات التجارية بسرعة؟',
+ a:'لأن منها ما يرد على منقولات <b class="m">معرضة لتقلبات الأسعار</b> أو <b class="m">قابلة للتلف</b>.'},
+{id:'c29',d:'idea',p:'٢٣',q:'ماذا يستلزم عامل السرعة بالضرورة؟',
+ a:'إيجاد <b class="m">قواعد قانونية خاصة</b> تختلف عن تلك التي تطبق على المعاملات المدنية، وهذا ما نحا إليه القانون التجاري في <b class="m">حرية الإثبات</b> في المواد التجارية.'},
+{id:'c30',d:'num',p:'٢٣',q:'ما القاعدة العامة للإثبات في المواد المدنية؟ وما سندها؟',
+ a:'وجوب <b class="m">الإثبات الكتابي</b> في الالتزامات التعاقدية التي تزيد قيمتها عن <b class="m">(٥٠٠) ليرة سورية</b> أو كانت غير محددة القيمة.<br><span class="art">مادة /٥٤/ من قانون البينات</span>'},
+{id:'c31',d:'num',p:'٢٣',q:'كيف يكون الإثبات في المواد التجارية؟ وما سنده؟',
+ a:'<b class="m">حرّ لا يتقيد بأي قيد</b>؛ إذ يجوز بجميع وسائل الإثبات: شهادة الشهود، والقرائن، وجميع طرق الإثبات الأخرى.<br><span class="art">المادة ١٠٤-١٠٥ من القانون التجاري</span>'},
+{id:'c32',d:'def',p:'٢٣',q:'ما معنى الائتمان؟ وما مكانته في الحياة التجارية؟',
+ a:'الائتمان يعني <b class="m">منح المدين أجلاً للوفاء</b>.<br>وهو <b class="m">الدعامة الثانية</b> للحياة التجارية.'},
+{id:'c33',d:'idea',p:'٢٣',q:'ما المثال الذي ضربه النص على الائتمان؟',
+ a:'التاجر يشتري البضاعة وقد لا يتمكن من دفع ثمنها على الفور، فيمنحه <b class="m">البائع</b> الائتمان أي يخوله أجلاً للوفاء بالتزاماته؛ و<b class="m">المصرف</b> يقرض المشتري على أن يسدد بعد بيع البضائع.'},
+{id:'c34',d:'idea',p:'٢٣',q:'ماذا يترتب إذا أخلّ أحد التجار بالثقة؟',
+ a:'التجار يرتبطون بروابط متتابعة قوامها الائتمان أو <b class="m">الثقة المتبادلة</b>، فإذا أخلّ أحدهم بهذه الثقة أدى ذلك إلى <b class="m">سلسلة طويلة من الاضطرابات</b> في المعاملات.'},
+{id:'c35',d:'list',p:'٢٤',q:'كيف دعم القانون التجاري الائتمان؟',
+ a:'١- <b class="m">الزيادة في ضمانات الدائن التجاري</b> بفرض عقوبات صارمة على من يخل بالائتمان التجاري، عن طريق تطبيق <b class="m">نظام الإفلاس</b> على التاجر المتوقف عن سداد ديونه التجارية في مواعيد استحقاقها.<br>٢- كما يتمثل دعم الائتمان في <b class="m">افتراض التضامن</b> بين المدينين المتعددين بدين تجاري <span class="art">م ١١٠ تجاري</span><br>٣- وتصل قوة هذا الدعم إلى حدّ <b class="m">منع</b> التاجر المدين المفلس من إدارة أمواله والتصرف بها، وحرمانه من بعض حقوقه المدنية والسياسية <span class="art">م ٤٥٣-٤٥٤ تجاري</span>',h:'إفلاس · تضامن · منع = «أتمّ»'},
+{id:'c36',d:'idea',p:'٢٤',q:'بماذا يتمثل تطبيق نظام الإفلاس على التاجر؟',
+ a:'بتصفية أموال التاجر، وتوزيع الناتج من هذه التصفية على الدائنين <b class="m">كلٌّ بنسبة ما له من حق</b> قِبَل المدين.'},
+{id:'c37',d:'num',p:'٢٤',q:'أي مادة تفترض التضامن بين المدينين المتعددين بدين تجاري؟',
+ a:'<span class="art">المادة ١١٠ قانون تجاري</span><br>دونما حاجة إلى اتفاق صريح أو نص في القانون.'},
+{id:'c38',d:'num',p:'٢٤',q:'ما المادتان اللتان تمنعان التاجر المدين المفلس من إدارة أمواله، وتحرمانه من بعض حقوقه المدنية والسياسية؟',
+ a:'<span class="art">المادة ٤٥٣-٤٥٤ قانون تجاري</span>'},
+{id:'c39',d:'list',p:'٢٤',q:'ما أسباب أنصار دمج القانون المدني مع القانون التجاري؟',
+ a:'١- التطورات الاقتصادية والاجتماعية والسياسية جعلت معظم الأفراد يقومون بمعاملات تجارية، مما يتطلب إخضاعها إلى <b class="m">أحكام واحدة</b> سواء قام بها تاجر أم شخص عادي.<br>٢- ميزات المعاملات التجارية من سرعة وسهولة وضمان الثقة يجب أن يستفيد منها <b class="m">جميع الناس</b> بما فيهم غير التاجر.<br>٣- <b class="m">بعض الدول</b>: إنكلترا، إيطاليا، سويسرا… <span class="cut">ينقطع النص هنا في آخر ص ٢٤</span>',h:'تطورات · ميزات · دول = «تمدّ»'},
+{id:'c40',d:'list',p:'٢٤',q:'ما أمثلة المعاملات التجارية التي صار معظم الأفراد يقومون بها؟',
+ a:'فتح <b class="m">الحسابات الجارية</b> و<b class="m">الاعتمادات</b>، وتداول <b class="m">الأسهم</b> في الشركات المساهمة، وكذلك <b class="m">الأسناد التجارية</b>.'},
+{id:'c41',d:'num',p:'٢٤',q:'ماذا أصدرت إيطاليا عام ١٩٤٢؟',
+ a:'<b class="m">قانوناً موحداً</b> تضمّن الأحكام المشتركة للالتزامات، مع مباحث خاصة بالمؤسسات التجارية وأسناد الائتمان وسجل التجارة.'},
+{id:'c42',d:'idea',p:'٢٤',q:'ماذا فعلت إنكلترا بحسب النص؟',
+ a:'أخضعت التجار وغير التجار إلى <b class="m">الحقوق العامة</b> common law.'}
+];
+
+var QUIZ=[
+{id:'q1',p:'١٩',q:'بحسب إجماع علماء القانون، القانون التجاري فرعٌ من فروع:',o:['القانون الخاص','القانون العام','القانون الإداري','القانون الدولي الخاص'],s:'«أجمع علماء القانون بأن القانون التجاري هو فرع من فروع القانون الخاص».'},
+{id:'q2',p:'١٩',q:'يتحدد نطاق القانون التجاري وفقاً لـ:',o:['تعيين مفهوم الأعمال التجارية، وتحديد المقصود بالتاجر','تحديد أسعار السلع والخدمات، وتنظيم التجارة الداخلية والخارجية','تنظيم السلطات العامة، وعلاقتها بالأفراد','الاختلاف الجذري بين المعاملات المدنية والتجارية'],s:'«يتحدد وفقاً لتعيين مفهوم الأعمال التجارية من جهة ولتحديد المقصود بالتاجر من جهة أخرى».'},
+{id:'q3',p:'١٩',tag:'num',q:'القانون التجاري السوري الجديد هو القانون رقم:',o:['/٣٣/ تاريخ ٢٠٠٧/١٢/٢٧','/٥٤/ تاريخ ٢٠٠٧/١٢/٢٧','/٣٣/ تاريخ ١٩٤٢','/١١٠/ تاريخ ٢٠٠٧/١٢/٢٧'],s:'«المادة الأولى من القانون التجاري السوري الجديد رقم /٣٣/ تاريخ ٢٠٠٧/١٢/٢٧».'},
+{id:'q4',p:'١٩',tag:'num',q:'بحسب المادة الأولى من القانون التجاري، القواعد المختصة بالأعمال التجارية تشمل الأعمال التي يقوم بها:',o:['أي شخص مهما كانت صفته القانونية','التجار وحدهم','الشركات المساهمة وحدها','من اتخذوا التجارة مهنة دون غيرهم'],s:'«يتضمن هذا القانون من جهة القواعد المختصة بالأعمال التجارية التي يقوم بها أي شخص مهما كانت صفته القانونية…».'},
+{id:'q5',p:'١٩',q:'أيُّ وصفٍ أطلقه النص على القانون المدني؟',o:['الأساس العريض لسائر فروع القانون الخاص','الدعامة الثانية للحياة التجارية','فرع يقتصر على فئة التجار','قانون يستند إلى العادات والأعراف'],s:'«فالأصيل هو القانون المدني وهذا الذي يعتبر في الحقيقة الأساس العريض لسائر فروع القانون الخاص».'},
+{id:'q6',p:'٢٠',q:'«حجر الزاوية» ليس فقط لقواعد القانون المدني بل وأيضاً لقواعد القانون التجاري هو:',o:['قانون الالتزام','قانون البينات','قانون العقوبات','قانون الغرف التجارية'],s:'«وعلى الأخص قانون الالتزام فهو حجر الزاوية…».'},
+{id:'q7',p:'٢٠',q:'القانون العام يبحث في:',o:['تنظيم السلطات العامة، وعلاقة هذه السلطات والقائمين عليها بالأفراد','تنظيم علاقات الأفراد مع بعضهم البعض','الأعمال التجارية وفئة التجار','علاقات الأفراد دون النظر إلى صفتهم'],s:'«فالقانون العام يبحث في تنظيم السلطات العامة وفي علاقة هذه السلطات والقائمين عليها بالأفراد».'},
+{id:'q8',p:'٢٠',q:'يُقسم القانون الخاص إلى:',o:['القانون المدني والقانون التجاري','القانون العام والقانون الخاص','القانون الإداري وقانون العقوبات','القانون الدولي الخاص والقانون المدني'],s:'«ويقسم القانون الخاص إلى قسمين: القانون المدني والقانون التجاري».'},
+{id:'q9',p:'٢١',q:'ورد «قانون الغرف التجارية» في النص مثالاً على صلة القانون التجاري بـ:',o:['القانون الإداري','القانون الدولي الخاص','قانون العقوبات','القانون المدني'],s:'صلة القانون التجاري مع القانون الإداري: قوانين تقيد حرية التعاقد… وتفرض الرقابة على الاستيراد والتصدير «كقانون الغرف التجارية».'},
+{id:'q10',p:'٢١',q:'اختلاف القوانين الواجب تطبيقها، بسبب الأعمال التجارية بين بلد وآخر، يُرجع في حله إلى:',o:['القانون الدولي الخاص','القانون الإداري','قانون العقوبات','قانون الموجبات السويسري'],s:'«…مما يؤدي إلى اختلافات كثيرة في القوانين الواجب تطبيقها والتي يرجع في حلها إلى القانون الدولي الخاص».'},
+{id:'q11',p:'٢١',q:'أيٌّ مما يلي ليس من أمثلة العقوبات التي ذكرها النص في رابطة القانون التجاري بقانون العقوبات؟',o:['فرض الرقابة على الاستيراد والتصدير','إساءة الائتمان','الإفلاس التقصيري','إصدار الشيكات بدون رصيد'],s:'الأمثلة في النص: الاحتيال، وإساءة الائتمان، والإفلاس التقصيري، والإفلاس الاحتيالي، وإصدار الشيكات بدون رصيد. أما الرقابة على الاستيراد والتصدير فمن أمثلة الصلة بالقانون الإداري.'},
+{id:'q12',p:'٢١',q:'نشأ خضوع القانون التجاري لسيطرة القانون المدني:',o:['منذ أن قُنِّنت الأعراف التجارية','منذ صدور القانون رقم /٣٣/ لعام ٢٠٠٧','منذ صدور القانون الإيطالي الموحد عام ١٩٤٢','منذ تطبيق نظام الإفلاس'],s:'«وقد نشأ ذلك منذ أن قننت الأعراف التجارية».'},
+{id:'q13',p:'٢٢',q:'حجة القائلين بأنه لم يعد هنالك حاجة لقوانين تجارية مستقلة عن القوانين المدنية:',o:['أن المعاملات تكون تارة ذات صفة تجارية وتارة ذات صفة مدنية','أن النشاط التجاري يتميز بالتكرار والاستمرار','أن الائتمان هو الدعامة الثانية للحياة التجارية','أن الإثبات في المواد التجارية حرّ'],s:'«ودعم القائلون بهذا الرأي حجتهم بأن المعاملات تكون تارة ذات صفة تجارية وتارة ذات صفة مدنية».'},
+{id:'q14',p:'٢٢',q:'استند الفقيه الذي انتقد فكرة الدمج إلى:',o:['قانون الموجبات السويسري','القانون الإيطالي الموحد لعام ١٩٤٢','الحقوق العامة common law في إنكلترا','المادة الأولى من القانون التجاري السوري'],s:'«…مستنداً إلى أن قانون الموجبات السويسري… لم يقض البتة على استقلال قانون التجارة».'},
+{id:'q15',p:'٢٢–٢٤',q:'يتجلى الاختلاف الجذري بين طبيعة المعاملات المدنية والتجارية في ظاهرتَي:',o:['السرعة والائتمان','التكرار والاستمرار','الثبات والاستقرار','الحذر والحرص'],s:'الظاهرتان في النص: السرعة ثم الائتمان، ويعود إليهما بقوله: «هذه المظاهر (السرعة والائتمان) التي تحدثنا عنها».'},
+{id:'q16',p:'٢٢',q:'ما يميز المعاملات المدنية عن المعاملات التجارية هو:',o:['انتفاء فكرة المضاربة، أو على الأقل الدور الذي تلعبه','تحقيق الربح عن طريق تداول الثروات','الاستناد إلى العادات والأعراف','حرية الإثبات'],s:'«إن ما يميز المعاملات المدنية عن المعاملات التجارية هو انتفاء فكرة المضاربة أو على الأقل الدور الذي تلعبه».'},
+{id:'q17',p:'٢٢',q:'المعاملات المدنية قوامها:',o:['الثبات والاستقرار','التكرار والاستمرار','المضاربة وتداول الثروات','السرعة والسهولة'],s:'«وهذه هي صفات المعاملات المدنية التي قوامها الثبات والاستقرار».'},
+{id:'q18',p:'٢٣',q:'هدف المعاملات التجارية والسبيل إليه:',o:['تحقيق الربح، والسبيل إليه المضاربة عن طريق تداول الثروات','الحفاظ على رأس المال، والسبيل إليه الحذر والحرص','عدم الانتقاص من الذمة المالية، والسبيل إليه الإثبات الكتابي','الثبات والاستقرار، والسبيل إليه القواعد الآمرة'],s:'«إذ أن هدفها هو تحقيق الربح وسبيلها إلى ذلك المضاربة عن طريق تداول الثروات».'},
+{id:'q19',p:'٢٣',tag:'num',q:'سند القاعدة العامة للإثبات في المواد المدنية (وجوب الإثبات الكتابي):',o:['مادة /٥٤/ من قانون البينات','المادة ١٠٤-١٠٥ من القانون التجاري','المادة ١١٠ قانون تجاري','المادة ٤٥٣-٤٥٤ قانون تجاري'],s:'«…أو كانت غير محددة القيمة، مادة /٥٤/ من قانون البينات».'},
+{id:'q20',p:'٢٣',tag:'num',tf:true,ans:true,q:'يجب الإثبات الكتابي في الالتزامات التعاقدية المدنية التي تزيد قيمتها عن (٥٠٠) ليرة سورية أو كانت غير محددة القيمة.',s:'«…هي وجوب الإثبات الكتابي في الالتزامات التعاقدية التي تزيد قيمتها عن (٥٠٠) ليرة سورية أو كانت غير محددة القيمة».'},
+{id:'q21',p:'٢٣',tag:'num',q:'الإثبات في المواد التجارية حرّ لا يتقيد بأي قيد بموجب:',o:['المادة ١٠٤-١٠٥ من القانون التجاري','مادة /٥٤/ من قانون البينات','المادة ١١٠ قانون تجاري','المادة ٤٥٣-٤٥٤ قانون تجاري'],s:'«بينما الإثبات في المواد التجارية حرّ لا يتقيد بأي قيد (مادة ١٠٤-١٠٥) من القانون التجاري».'},
+{id:'q22',p:'٢٣',q:'الائتمان يعني:',o:['منح المدين أجلاً للوفاء','إبرام المعاملات بسرعة','تصفية أموال التاجر وتوزيعها على الدائنين','افتراض التضامن بين المدينين'],s:'«الائتمان يعني منح المدين أجلاً للوفاء».'},
+{id:'q23',p:'٢٣',q:'وصف النص الائتمان بأنه:',o:['الدعامة الثانية للحياة التجارية','الأساس العريض لسائر فروع القانون الخاص','حجر الزاوية لقواعد القانون التجاري','الشريعة العامة لروابط الأفراد'],s:'«لذلك فإن الائتمان هو الدعامة الثانية للحياة التجارية».'},
+{id:'q24',p:'٢٤',tag:'num',q:'افتراض التضامن بين المدينين المتعددين بدين تجاري، دون اتفاق صريح أو نص، ورد في:',o:['المادة ١١٠ قانون تجاري','المادة ٤٥٣-٤٥٤ قانون تجاري','المادة ١٠٤-١٠٥ من القانون التجاري','مادة /٥٤/ من قانون البينات'],s:'«…افتراض التضامن بين المدينين المتعددين بدين تجاري دونما حاجة إلى اتفاق صريح أو نص في القانون (المادة ١١٠ قانون تجاري)».'},
+{id:'q25',p:'٢٤',tag:'num',q:'منع التاجر المدين المفلس من إدارة أمواله والتصرف بها، وحرمانه من بعض حقوقه المدنية والسياسية، ورد في:',o:['المادة ٤٥٣-٤٥٤ قانون تجاري','المادة ١١٠ قانون تجاري','المادة ١٠٤-١٠٥ من القانون التجاري','مادة /٥٤/ من قانون البينات'],s:'«…وحرمانه من بعض حقوقه المدنية والسياسية مادة (٤٥٣-٤٥٤ قانون تجاري)».'},
+{id:'q26',p:'٢٤',q:'في نظام الإفلاس، يُوزَّع الناتج من تصفية أموال التاجر على الدائنين:',o:['كلٌّ بنسبة ما له من حق قِبَل المدين','بالتساوي بينهم مهما كانت حقوقهم','بحسب ما يتفقون عليه مع المدين','للدائن التجاري وحده'],s:'«…وتوزيع الناتج من هذه التصفية على الدائنين كل بنسبة ما له من حق قبل المدين».'},
+{id:'q27',p:'٢٤',tag:'num',q:'أصدرت إيطاليا قانوناً موحداً عام:',o:['١٩٤٢','٢٠٠٧','١٨٩٣','١٩٣٤'],s:'«وإيطاليا التي أصدرت في عام ١٩٤٢ قانوناً موحداً…».'},
+{id:'q28',p:'٢٤',q:'أخضعت إنكلترا التجار وغير التجار إلى:',o:['الحقوق العامة common law','قانون موحد للالتزامات','قانون الموجبات','نظام الإفلاس'],s:'«إن بعض الدول مثل إنكلترا التي أخضعت التجار وغير التجار إلى الحقوق العامة common law».'},
+{id:'q29',p:'١٩',tf:true,ans:false,q:'القانون التجاري هو الفرع الأصيل من فروع القانون الخاص.',s:'«ليس هو الفرع الأصيل. فالأصيل هو القانون المدني».'},
+{id:'q30',p:'٢٠',tf:true,ans:false,q:'علاقات الأفراد في احترافهم أو تعاطيهم الأعمال التجارية تنظمها أحكام القانون الخاص وحدها.',s:'«…لا تنظمها فقط أحكام القانون الخاص ومنها القانون التجاري وإنما تتعداها في بعض الأحيان إلى أحكام القانون العام».'},
+{id:'q31',p:'٢٣',tf:true,ans:false,q:'النشاط التجاري ينتظر النصوص القانونية حين تظهر الحاجة إلى قاعدة معينة.',s:'«وهو لا ينتظر النصوص القانونية حين تظهر الحاجة إلى قاعدة معينة…».'},
+{id:'q32',p:'٢٤',tf:true,ans:true,q:'يُفترض التضامن بين المدينين المتعددين بدين تجاري دونما حاجة إلى اتفاق صريح أو نص في القانون.',s:'صحيح، وهذا من صور دعم الائتمان (المادة ١١٠ قانون تجاري).'},
+{id:'q33',p:'٢٤',tf:true,ans:false,q:'مظهرا السرعة والائتمان أقنعا جميع الفقهاء باستقلال القانون التجاري.',s:'«على أن هذه المظاهر (السرعة والائتمان) التي تحدثنا عنها لم تقنع بعض الفقهاء أنصار دمج القانون المدني مع القانون التجاري».'},
+{id:'q34',p:'٢٢',tf:true,ans:false,q:'قانون الموجبات السويسري قضى على استقلال قانون التجارة.',s:'«فهو لم يقض البتة على استقلال قانون التجارة إذ بقيت الأحكام المتعلقة بالتجارة مستقلة ضمن القانون الواحد».'},
+{id:'q35',p:'٢٣',tf:true,ans:true,q:'النشاط التجاري يتميز بالتكرار والاستمرار.',s:'«والنشاط التجاري يتميز بالتكرار والاستمرار».'}
+];
+
+var ESSAY=[
+{id:'e1',p:'١٩',l:'تعريف القانون التجاري ونطاقه',q:'عرّف القانون التجاري، وبيّن وفقاً لأي أمرين يتحدد نطاقه، مع ذكر ما نصت عليه المادة الأولى من القانون التجاري السوري الجديد.',items:[
+ {t:'فرع من فروع القانون الخاص',k:[['القانون الخاص']]},
+ {t:'مجموع القواعد القانونية التي تنظم النشاط التجاري',k:[['القواعد','النشاط التجاري']]},
+ {t:'تطبق على فئة معينة من الأشخاص هم التجار',k:[['فئة','التجار']]},
+ {t:'النطاق ١: تعيين مفهوم الأعمال التجارية',k:[['مفهوم الأعمال'],['تعيين']]},
+ {t:'النطاق ٢: تحديد المقصود بالتاجر',k:[['المقصود بالتاجر']]},
+ {t:'القانون التجاري السوري الجديد رقم /٣٣/ تاريخ ٢٠٠٧/١٢/٢٧',k:[['33'],['2007']]},
+ {t:'المادة الأولى: القواعد المختصة بالأعمال التجارية التي يقوم بها أي شخص مهما كانت صفته القانونية',k:[['أي شخص'],['مهما كانت']]},
+ {t:'المادة الأولى: الأحكام التي تطبق على الأشخاص الذين اتخذوا التجارة مهنة',k:[['التجارة مهنة'],['اتخذوا']]}
+]},
+{id:'e2',p:'١٩–٢٠',l:'القانون التجاري ليس الفرع الأصيل',q:'اشرح عبارة: «القانون التجاري، كفرع من فروع القانون الخاص، ليس هو الفرع الأصيل».',items:[
+ {t:'الفرع الأصيل هو القانون المدني',k:[['الأصيل','المدني']]},
+ {t:'القانون المدني هو الأساس العريض لسائر فروع القانون الخاص',k:[['الأساس العريض'],['سائر فروع']]},
+ {t:'يضع القواعد العامة التي تنظم علاقات الأفراد بغض النظر عن طبيعة نشاطهم أو مهنتهم',k:[['بغض النظر'],['القواعد العامة']]},
+ {t:'فهو «الشريعة العامة» لروابط الأفراد',k:[['الشريعة العامة']]},
+ {t:'نصوصه تتضمن المبادئ الأساسية العامة التي يستند إليها المنطق القانوني',k:[['المبادئ'],['المنطق القانوني']]},
+ {t:'دراسة قواعد القانون التجاري ترتكز على معرفة ضرورية بقواعد القانون المدني',k:[['ترتكز'],['معرفة ضرورية']]},
+ {t:'وعلى الأخص قانون الالتزام: حجر الزاوية لقواعد المدني والتجاري',k:[['الالتزام'],['حجر الزاوية']]}
+]},
+{id:'e3',p:'٢٠–٢١',l:'علاقة القانون التجاري بالقوانين الأخرى',q:'تحدّث عن علاقة القانون التجاري مع باقي القوانين الأخرى.',items:[
+ {t:'تقسيم القانون إلى عام (تنظيم السلطات العامة وعلاقتها بالأفراد) وخاص (تنظيم علاقات الأفراد مع بعضهم)',k:[['السلطات العامة'],['القانون العام','القانون الخاص']]},
+ {t:'القانون الخاص يُقسم إلى مدني وتجاري، والتجاري يقتصر على الأعمال التجارية أو فئة التجار',k:[['يقسم'],['قسمين'],['يقتصر']]},
+ {t:'علاقات الأفراد في الأعمال التجارية تتعدى أحياناً إلى أحكام القانون العام',k:[['تتعد'],['أحكام القانون العام']]},
+ {t:'القانون الإداري: تقييد حرية التعاقد، قواعد آمرة، تحديد الأسعار، تنظيم التجارة، الرقابة على الاستيراد والتصدير',k:[['الإداري'],['حرية التعاقد']]},
+ {t:'مثال الإداري: قانون الغرف التجارية',k:[['الغرف']]},
+ {t:'القانون الدولي الخاص: الأعمال التجارية بين بلد وآخر واختلاف القوانين الواجب تطبيقها',k:[['الدولي الخاص']]},
+ {t:'قانون العقوبات: الاحتيال، إساءة الائتمان، الإفلاس التقصيري، الإفلاس الاحتيالي، الشيكات بدون رصيد',k:[['العقوبات'],['الشيكات']]},
+ {t:'القانون المدني: التجاري يخضع في كثير من نواحيه لسيطرته، منذ أن قُنِّنت الأعراف التجارية',k:[['سيطرة'],['قننت'],['تقنين']]}
+]},
+{id:'e4',p:'٢٢–٢٣',l:'الاختلاف الجذري وظاهرة السرعة',q:'ما الظواهر التي يتجلى فيها الاختلاف الجذري بين طبيعة المعاملات المدنية والتجارية؟ ثم اشرح ظاهرة السرعة.',items:[
+ {t:'الظاهرتان: السرعة والائتمان',k:[['السرعة','الائتمان']]},
+ {t:'المدنية: انتفاء فكرة المضاربة أو على الأقل الدور الذي تلعبه',k:[['انتفاء']]},
+ {t:'المدنية: غالباً بقصد الحفاظ على رأس المال لا بنية تحقيق الربح، وما يهم الفرد عدم الانتقاص من ذمته المالية',k:[['رأس'],['الذمة']]},
+ {t:'المدنية: الحذر والحرص، والرؤية والتبصر، وقوامها الثبات والاستقرار',k:[['الحذر'],['الثبات'],['التبصر']]},
+ {t:'التجارية: هدفها تحقيق الربح وسبيلها المضاربة عن طريق تداول الثروات',k:[['تداول'],['الربح']]},
+ {t:'التجارية: تستند إلى العادات والأعراف ولا تنتظر النصوص القانونية',k:[['الأعراف'],['العادات']]},
+ {t:'التجارية: التكرار والاستمرار، ومنقولات معرضة لتقلبات الأسعار أو قابلة للتلف',k:[['التكرار'],['التلف'],['تقلبات']]},
+ {t:'النتيجة: حرية الإثبات؛ المدني كتابي فوق (٥٠٠) ل.س (م /٥٤/ بينات) والتجاري حرّ (م ١٠٤-١٠٥)',k:[['الإثبات']]}
+]},
+{id:'e5',p:'٢٣–٢٤',l:'الائتمان ودعم القانون له',q:'عرّف الائتمان، وبيّن كيف دعمه القانون التجاري.',items:[
+ {t:'الائتمان: منح المدين أجلاً للوفاء',k:[['أجل']]},
+ {t:'الدعامة الثانية للحياة التجارية',k:[['الدعامة']]},
+ {t:'المثال: البائع يمنح أجلاً للوفاء، والمصرف يقرض المشتري',k:[['البائع'],['المصرف']]},
+ {t:'روابط متتابعة قوامها الثقة المتبادلة، والإخلال بها يؤدي إلى سلسلة طويلة من الاضطرابات',k:[['الثقة'],['اضطرابات']]},
+ {t:'الزيادة في ضمانات الدائن التجاري بفرض عقوبات صارمة على من يخل بالائتمان التجاري',k:[['ضمانات'],['عقوبات صارمة']]},
+ {t:'وذلك بتطبيق نظام الإفلاس: تصفية أموال التاجر وتوزيع الناتج على الدائنين كلٌّ بنسبة حقه',k:[['الإفلاس'],['تصفية']]},
+ {t:'كما يتمثل دعم الائتمان في افتراض التضامن بين المدينين المتعددين (م ١١٠ تجاري)',k:[['التضامن'],['110']]},
+ {t:'وتصل قوة هذا الدعم إلى حد منع المفلس من إدارة أمواله وحرمانه من بعض حقوقه المدنية والسياسية (م ٤٥٣-٤٥٤)',k:[['حرمان'],['453'],['السياسية']]}
+]},
+{id:'e6',p:'٢١–٢٤',l:'الخلاف حول دمج التجاري بالمدني',q:'اعرض الخلاف الفقهي حول دمج قانون التجارة بالقانون المدني.',items:[
+ {t:'تباينت وجهات النظر بين علماء القانون حول الدمج',k:[['تباينت'],['وجهات النظر'],['خلاف']]},
+ {t:'رأي: لا حاجة لقوانين تجارية مستقلة، وحجتهم أن المعاملات تارة تجارية وتارة مدنية',k:[['تارة'],['لا حاجة'],['لم يعد']]},
+ {t:'فقيه آخر انتقد الدمج مستنداً إلى قانون الموجبات السويسري',k:[['الموجبات']]},
+ {t:'أصحاب الاستقلال: الاختلاف الجذري بين طبيعة المعاملات، ويتجلى في السرعة والائتمان',k:[['الجذري'],['السرعة']]},
+ {t:'أنصار الدمج لم تقنعهم السرعة والائتمان',k:[['لم تقنع'],['أنصار الدمج']]},
+ {t:'السبب ١: التطورات الاقتصادية والاجتماعية والسياسية، فأحكام واحدة للتاجر والشخص العادي',k:[['التطورات']]},
+ {t:'السبب ٢: ميزات السرعة والسهولة وضمان الثقة يجب أن يستفيد منها جميع الناس',k:[['الميزات'],['السهولة'],['جميع الناس']]},
+ {t:'السبب ٣: بعض الدول: إنكلترا، إيطاليا (١٩٤٢)، سويسرا… (ينقطع النص هنا في آخر ص ٢٤)',k:[['إنكلترا'],['انجلترا'],['إيطاليا'],['1942']]}
+]}
+];
+
+/* ================= TABS ================= */
+var TABS=['map','verbatim','cards','quiz','essay','compare'];
+var state={tab:'map'};
+function show(tab,initial){
+  if(TABS.indexOf(tab)<0)tab='map';
+  state.tab=tab;
+  $$('.tab').forEach(function(b){var on=b.getAttribute('data-tab')===tab;b.setAttribute('aria-selected',on?'true':'false');b.tabIndex=on?0:-1;});
+  $$('.panel').forEach(function(p){p.hidden=p.id!=='p-'+tab;});
+  store.tab=tab;save();
+  if(!initial){
+    var y=$('#tabs-anchor').getBoundingClientRect().top+window.scrollY;
+    if(window.scrollY>y)window.scrollTo(0,y);
+    var act=$('.tab[data-tab="'+tab+'"]');
+    if(act&&act.scrollIntoView){try{act.scrollIntoView({block:'nearest',inline:'nearest'});}catch(e){}}
+  }
+}
+function bindTabs(){
+  $('.tabs-in').addEventListener('click',function(e){var b=e.target.closest('.tab');if(b)show(b.getAttribute('data-tab'));});
+  $('.tabs-in').addEventListener('keydown',function(e){
+    var i=TABS.indexOf(state.tab),j=null;
+    if(e.key==='ArrowLeft')j=(i+1)%TABS.length;
+    else if(e.key==='ArrowRight')j=(i-1+TABS.length)%TABS.length;
+    else if(e.key==='Home')j=0;
+    else if(e.key==='End')j=TABS.length-1;
+    if(j!==null){e.preventDefault();show(TABS[j]);$('.tab[data-tab="'+TABS[j]+'"]').focus();}
+  });
+}
+
+/* ================= MAP ================= */
+function initMap(){
+  var panel=$('#p-map'),rb=$('#map-recite'),tb=$('#map-toggle');
+  rb.addEventListener('click',function(){
+    var on=rb.getAttribute('aria-pressed')!=='true';
+    rb.setAttribute('aria-pressed',on?'true':'false');
+    panel.classList.toggle('recite',on);
+    $$('.leaves>li',panel).forEach(function(li){
+      li.classList.remove('shown');
+      if(on){li.tabIndex=0;li.setAttribute('role','button');}else{li.removeAttribute('tabindex');li.removeAttribute('role');}
+    });
+    if(on){$$('details',panel).forEach(function(d){d.open=true;});sync();}
+  });
+  panel.addEventListener('click',function(e){
+    if(!panel.classList.contains('recite'))return;
+    var li=e.target.closest('.leaves>li');if(li)li.classList.toggle('shown');
+  });
+  panel.addEventListener('keydown',function(e){
+    if(!panel.classList.contains('recite'))return;
+    var li=e.target.closest('.leaves>li');
+    if(li&&(e.key==='Enter'||e.key===' ')){e.preventDefault();li.classList.toggle('shown');}
+  });
+  function sync(){var all=$$('details',panel).every(function(d){return d.open;});tb.textContent=all?'طيّ الكل':'فتح الكل';}
+  tb.addEventListener('click',function(){var all=$$('details',panel).every(function(d){return d.open;});$$('details',panel).forEach(function(d){d.open=!all;});sync();});
+  $$('details',panel).forEach(function(d){d.addEventListener('toggle',sync);});
+  sync();
+}
+
+/* ================= VERBATIM ================= */
+var VMODES=[['read','١ قراءة'],['cloze','٢ فراغات'],['initials','٣ أوائل الكلمات'],['recite','٤ تسميع']];
+var NONJOIN={};Array.prototype.forEach.call('اأإآٱدذرزوؤةءى',function(c){NONJOIN[c]=1;});
+function cueWord(tok){
+  var m=tok.match(/^([^\p{L}\p{N}\p{M}]*)([\s\S]*?)([^\p{L}\p{N}\p{M}]*)$/u);
+  if(!m||!m[2])return tok;
+  var lead=m[1],trail=m[3],core=m[2].replace(/[ً-ٰٟـ]/g,'');
+  if(/^\p{N}/u.test(core)){var chars=Array.from(core);return lead+'<span class="cw">'+chars[0]+new Array(chars.length).join('·')+'</span>'+trail;}
+  if(core.length<=2)return tok;
+  var n=1;
+  if(/^(وال|بال|فال|كال)/.test(core)&&core.length>4)n=4;
+  else if(/^(ال|لل)/.test(core)&&core.length>3)n=3;
+  else if(/^[وف]/.test(core)&&core.length>3)n=2;
+  var c=core.slice(0,n);
+  return lead+'<span class="cw">'+c+(NONJOIN[c.charAt(c.length-1)]?'':'ـ')+'</span>'+trail;
+}
+function passageHTML(v,mode){
+  if(mode==='read')return '<p class="excerpt">'+mk(v.x)+'</p>';
+  if(mode==='cloze')return '<p class="excerpt">'+v.x.replace(/\[\[(.+?)\]\]/g,function(_,w){return '<button type="button" class="blank" aria-label="عبارة مخفية، اضغط لكشفها"><span>'+w+'</span></button>';})+'</p>';
+  if(mode==='initials')return '<p class="excerpt cues" role="button" tabindex="0" aria-label="أوائل الكلمات، اضغط لكشف النص">'+strip(v.x).split(/\s+/).map(cueWord).join(' ')+'</p>';
+  return '<div class="veil">النص مخفي للتسميع. بعد التسميع اضغط «كشف النص» للمقارنة.</div>';
+}
+function renderVerb(){
+  $('#v-modes').innerHTML=VMODES.map(function(x){return '<button type="button" role="radio" aria-checked="'+(store.vmode===x[0])+'" data-mode="'+x[0]+'">'+x[1]+'</button>';}).join('');
+  $('#v-list').innerHTML=VERB.map(function(v){
+    var done=!!store.verb[v.id];
+    return '<article class="vcard'+(done?' done':'')+'" data-id="'+v.id+'">'+
+      '<div class="vhead"><h3>'+v.t+'</h3><span class="pg">ص '+v.p+'</span></div>'+
+      '<div class="vbody">'+passageHTML(v,store.vmode)+'</div>'+
+      '<div class="vactions">'+
+        (store.vmode!=='read'?'<button type="button" class="btn ghost" data-act="reveal" aria-pressed="false">كشف النص</button>':'')+
+        '<button type="button" class="btn ghost" data-act="write" aria-expanded="false">اختبار كتابي</button>'+
+        '<button type="button" class="btn'+(done?' primary':'')+'" data-act="mem" aria-pressed="'+done+'">'+(done?'محفوظ ✓':'حفظته')+'</button>'+
+      '</div>'+
+      '<div class="vwrite" hidden>'+
+        '<label class="lab-sm" for="vw-'+v.id+'">النص من الذاكرة</label>'+
+        '<textarea id="vw-'+v.id+'" rows="4" placeholder="اكتب النص كما تحفظه…"></textarea>'+
+        '<div><button type="button" class="btn primary" data-act="check">تصحيح</button></div>'+
+        '<div class="vres" aria-live="polite"></div>'+
+      '</div>'+
+    '</article>';
+  }).join('');
+  updateVerbCount();
+}
+function updateVerbCount(){
+  var n=VERB.filter(function(v){return store.verb[v.id];}).length;
+  $('#v-count').innerHTML='محفوظ: <b>'+AR(n)+'</b> من '+AR(VERB.length);
+}
+function revealToggle(card,v){
+  var rb=$('[data-act="reveal"]',card);
+  var on=!(rb&&rb.getAttribute('aria-pressed')==='true');
+  $('.vbody',card).innerHTML=passageHTML(v,on?'read':store.vmode);
+  if(rb){rb.setAttribute('aria-pressed',String(on));rb.textContent=on?'إخفاء النص':'كشف النص';}
+}
+function checkHTML(v,typed){
+  if(!norm(typed))return '<p class="hint-line">اكتب النص أولاً، ثم اضغط «تصحيح».</p>';
+  var toks=strip(v.x).split(/\s+/).filter(Boolean);
+  var subs=[],owner=[];
+  toks.forEach(function(t,i){norm(t).split(' ').filter(Boolean).forEach(function(s){subs.push(s);owner.push(i);});});
+  var b=norm(typed).split(' ').filter(Boolean);
+  var n=subs.length,m=b.length,dp=[],i,j;
+  for(i=0;i<=n;i++)dp.push(new Uint16Array(m+1));
+  for(i=n-1;i>=0;i--)for(j=m-1;j>=0;j--)dp[i][j]=subs[i]===b[j]?dp[i+1][j+1]+1:Math.max(dp[i+1][j],dp[i][j+1]);
+  var hit=new Uint8Array(n);i=0;j=0;
+  while(i<n&&j<m){if(subs[i]===b[j]){hit[i]=1;i++;j++;}else if(dp[i+1][j]>=dp[i][j+1])i++;else j++;}
+  var st=toks.map(function(){return {tot:0,ok:0};});
+  for(var k=0;k<n;k++){st[owner[k]].tot++;if(hit[k])st[owner[k]].ok++;}
+  var matched=0;for(k=0;k<n;k++)matched+=hit[k];
+  var pct=n?Math.round(matched/n*100):0;
+  var html=toks.map(function(t,k){var s=st[k];if(!s.tot)return t;return s.ok===s.tot?'<span class="ok">'+t+'</span>':'<span class="miss">'+t+'</span>';}).join(' ');
+  var extra=m-matched;
+  var verdict=pct>=95?'مطابق تقريباً.':pct>=75?'قريب، راجع الكلمات المعلَّمة بالأحمر.':'يحتاج مزيداً من التكرار.';
+  var noun=(n%100>=3&&n%100<=10)?'كلمات':'كلمة';
+  return '<p class="score-line">المطابقة: '+AR(matched)+' من '+AR(n)+' '+noun+' ('+AR(pct)+'٪). '+verdict+'</p>'+
+    (extra>0?'<p class="hint-line">كلمات زائدة أو مكتوبة بشكل آخر: '+AR(extra)+'</p>':'')+
+    '<p class="excerpt diff">'+html+'</p>';
+}
+function bindVerb(){
+  $('#v-modes').addEventListener('click',function(e){var b=e.target.closest('[data-mode]');if(!b)return;store.vmode=b.getAttribute('data-mode');save();renderVerb();});
+  $('#v-modes').addEventListener('keydown',function(e){
+    if(e.key!=='ArrowLeft'&&e.key!=='ArrowRight')return;
+    var i=VMODES.map(function(x){return x[0];}).indexOf(store.vmode);
+    var j=e.key==='ArrowLeft'?(i+1)%VMODES.length:(i-1+VMODES.length)%VMODES.length;
+    e.preventDefault();store.vmode=VMODES[j][0];save();renderVerb();
+    var nb=$('#v-modes [data-mode="'+store.vmode+'"]');if(nb)nb.focus();
+  });
+  var list=$('#v-list');
+  list.addEventListener('click',function(e){
+    var card=e.target.closest('.vcard');if(!card)return;
+    var v=VERB.filter(function(x){return x.id===card.getAttribute('data-id');})[0];
+    var blank=e.target.closest('.blank');if(blank){blank.classList.toggle('on');return;}
+    if(e.target.closest('.excerpt.cues')){revealToggle(card,v);return;}
+    var b=e.target.closest('[data-act]');if(!b)return;
+    var act=b.getAttribute('data-act');
+    if(act==='reveal')revealToggle(card,v);
+    else if(act==='write'){var w=$('.vwrite',card);w.hidden=!w.hidden;b.setAttribute('aria-expanded',String(!w.hidden));if(!w.hidden)$('textarea',w).focus();}
+    else if(act==='mem'){
+      var on=!store.verb[v.id];
+      if(on)store.verb[v.id]=1;else delete store.verb[v.id];
+      save();b.setAttribute('aria-pressed',String(on));b.classList.toggle('primary',on);b.textContent=on?'محفوظ ✓':'حفظته';
+      card.classList.toggle('done',on);updateVerbCount();updateStats();
+    }
+    else if(act==='check'){$('.vres',card).innerHTML=checkHTML(v,$('textarea',card).value);}
+  });
+  list.addEventListener('keydown',function(e){
+    var c=e.target.closest('.excerpt.cues');
+    if(c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();var card=c.closest('.vcard');revealToggle(card,VERB.filter(function(x){return x.id===card.getAttribute('data-id');})[0]);}
+  });
+}
+
+/* ================= CARDS ================= */
+var deck='all',queue=[],flipped=false,round={yes:0,no:0};
+function boxOf(c){return store.cards[c.id]||0;}
+function deckName(d){for(var i=0;i<DECKS.length;i++)if(DECKS[i][0]===d)return DECKS[i][1];return '';}
+function deckCards(){return CARDS.filter(function(c){return deck==='all'||c.d===deck;});}
+function buildQueue(onlyHard){
+  var cs=deckCards();
+  if(onlyHard)cs=cs.filter(function(c){return boxOf(c)===1;});
+  var pri=function(b){return b===1?0:b===0?1:b===2?2:3;};
+  queue=shuffle(cs.slice()).sort(function(x,y){return pri(boxOf(x))-pri(boxOf(y));});
+  round={yes:0,no:0};flipped=false;
+}
+function renderCardsPanel(){
+  $('#c-decks').innerHTML=DECKS.map(function(x){
+    var n=x[0]==='all'?CARDS.length:CARDS.filter(function(c){return c.d===x[0];}).length;
+    return '<button type="button" class="chip" data-deck="'+x[0]+'" aria-pressed="'+(x[0]===deck)+'">'+x[1]+'<span class="cnt">'+AR(n)+'</span></button>';
+  }).join('');
+  renderLeitner();renderCard();
+}
+function renderLeitner(){
+  var cs=deckCards(),t=cs.length||1;
+  var nw=cs.filter(function(c){return boxOf(c)===0;}).length;
+  var lr=cs.filter(function(c){var b=boxOf(c);return b===1||b===2;}).length;
+  var ms=cs.filter(function(c){return boxOf(c)===3;}).length;
+  $('#c-bar').innerHTML='<i style="width:'+(ms/t*100)+'%;background:var(--green)"></i><i style="width:'+(lr/t*100)+'%;background:var(--seal)"></i>';
+  $('#c-legend').innerHTML='<span><i class="dot" style="background:var(--green)"></i>متقنة '+AR(ms)+'</span><span><i class="dot" style="background:var(--seal)"></i>قيد المراجعة '+AR(lr)+'</span><span><i class="dot" style="background:var(--rule)"></i>لم تُراجَع بعد '+AR(nw)+'</span>';
+}
+function renderCard(){
+  var stage=$('#c-stage');
+  if(!queue.length){
+    var hard=deckCards().filter(function(c){return boxOf(c)===1;}).length;
+    stage.innerHTML='<div class="done-card"><p class="big">انتهت الجولة</p><p class="rmsg">عرفتُها: '+AR(round.yes)+' · لم أعرفها: '+AR(round.no)+'</p><div class="row"><button type="button" class="btn primary" data-act="again">جولة جديدة</button>'+(hard?'<button type="button" class="btn" data-act="hard">الصعبة فقط ('+AR(hard)+')</button>':'')+'</div></div>';
+    $('#c-ctrl').hidden=true;$('#c-count').textContent='';return;
+  }
+  var c=queue[0];
+  $('#c-ctrl').hidden=false;
+  stage.innerHTML='<div class="flash'+(flipped?' flipped':'')+'" id="c-card" role="button" tabindex="0" aria-label="بطاقة، اضغط لقلبها">'+
+    '<div class="flash-in">'+
+      '<div class="face front" aria-hidden="'+flipped+'"><div class="ftop"><span>'+deckName(c.d)+'</span><span class="pg">ص '+c.p+'</span></div><p class="q">'+c.q+'</p><p class="hint">اضغط على البطاقة لرؤية الجواب</p></div>'+
+      '<div class="face back" aria-hidden="'+(!flipped)+'"><div class="ftop"><span>الجواب من النص</span><span class="pg">ص '+c.p+'</span></div><p class="a">'+c.a+'</p>'+(c.h?'<p class="note"><span class="note-k">حيلة حفظ</span><span class="note-t">'+c.h+'</span></p>':'')+'</div>'+
+    '</div></div>';
+  $('#c-count').textContent='المتبقي في هذه الجولة: '+AR(queue.length);
+}
+function flip(){
+  flipped=!flipped;var c=$('#c-card');if(!c)return;
+  c.classList.toggle('flipped',flipped);
+  $('.face.front',c).setAttribute('aria-hidden',String(flipped));
+  $('.face.back',c).setAttribute('aria-hidden',String(!flipped));
+}
+function rate(knew){
+  var c=queue.shift();if(!c)return;
+  var b=boxOf(c);
+  if(knew){store.cards[c.id]=b>=2?3:2;round.yes++;}
+  else{store.cards[c.id]=1;round.no++;queue.splice(Math.min(3,queue.length),0,c);}
+  save();flipped=false;renderLeitner();renderCard();updateStats();
+}
+function bindCards(){
+  $('#c-decks').addEventListener('click',function(e){var b=e.target.closest('[data-deck]');if(!b)return;deck=b.getAttribute('data-deck');store.deck=deck;save();buildQueue(false);renderCardsPanel();});
+  $('#c-stage').addEventListener('click',function(e){
+    if(e.target.closest('[data-act="again"]')){buildQueue(false);renderCard();return;}
+    if(e.target.closest('[data-act="hard"]')){buildQueue(true);renderCard();return;}
+    if(e.target.closest('.flash'))flip();
+  });
+  $('#c-stage').addEventListener('keydown',function(e){if(e.target.closest('.flash')&&(e.key==='Enter'||e.key===' ')){e.preventDefault();flip();}});
+  $('#c-yes').addEventListener('click',function(){rate(true);});
+  $('#c-no').addEventListener('click',function(){rate(false);});
+}
+
+/* ================= QUIZ ================= */
+var quiz=null,LET=['أ','ب','ج','د'];
+function startQuiz(kind){
+  var pool;
+  if(kind==='wrong'&&quiz){pool=quiz.items.filter(function(it,k){return quiz.ans[k]&&!quiz.ans[k].ok;}).map(function(it){return it.q;});}
+  else{pool=QUIZ.slice();if(kind==='num')pool=pool.filter(function(q){return q.tag==='num';});}
+  shuffle(pool);if(kind==='ten')pool=pool.slice(0,10);
+  quiz={kind:kind,items:pool.map(function(q){return {q:q,order:q.tf?[0,1]:shuffle(q.o.map(function(_,i){return i;}))};}),i:0,ans:[],saved:false};
+  renderQuiz();
+  var first=$('#quiz-root .opt');if(first)first.focus({preventScroll:true});
+}
+function correctIndex(it){return it.q.tf?(it.q.ans?0:1):it.order.indexOf(0);}
+function renderQuiz(){
+  var root=$('#quiz-root');
+  if(!quiz){root.innerHTML=quizStartHTML();return;}
+  if(quiz.i>=quiz.items.length){root.innerHTML=quizResultHTML();return;}
+  root.innerHTML=questionHTML();
+}
+function quizStartHTML(){
+  var nNum=QUIZ.filter(function(q){return q.tag==='num';}).length;
+  return '<div class="qstart"><p class="qlead">'+AR(QUIZ.length)+' سؤالاً من النص. بعد كل إجابة يظهر موضعها في النص ورقم صفحتها.</p>'+
+    '<div class="row"><button type="button" class="btn primary" data-q="ten">١٠ أسئلة عشوائية</button><button type="button" class="btn" data-q="all">كل الأسئلة ('+AR(QUIZ.length)+')</button><button type="button" class="btn" data-q="num">المواد والأرقام ('+AR(nNum)+')</button></div>'+
+    '<p class="hint-line">أفضل نتيجة سابقة: '+(store.quizBest==null?'لا توجد بعد':AR(store.quizBest)+'٪')+'</p></div>';
+}
+function questionHTML(){
+  var it=quiz.items[quiz.i],q=it.q,a=quiz.ans[quiz.i],N=quiz.items.length;
+  var opts=q.tf?['صح','خطأ']:it.order.map(function(k){return q.o[k];});
+  var correct=correctIndex(it);
+  var optsHTML=opts.map(function(o,k){
+    var cls='opt';if(a){if(k===correct)cls+=' right';else if(k===a.pick)cls+=' wrong';}
+    return '<button type="button" class="'+cls+'" data-pick="'+k+'"'+(a?' disabled':'')+'><span class="k">'+(q.tf?(k===0?'✓':'✗'):LET[k])+'</span><span>'+o+'</span></button>';
+  }).join('');
+  var fb=a?'<div class="fb '+(a.ok?'ok':'no')+'" role="status"><span class="v">'+(a.ok?'إجابة صحيحة':'إجابة غير صحيحة. الصحيح: '+opts[correct])+'</span><p class="src">'+q.s+'</p><span class="pg">ص '+q.p+'</span></div>'+
+    '<div class="qnext"><button type="button" class="btn primary" data-q="next" id="q-next">'+(quiz.i+1<N?'السؤال التالي':'عرض النتيجة')+'</button></div>':'';
+  return '<div class="qhead"><span>السؤال '+AR(quiz.i+1)+' من '+AR(N)+'</span><button type="button" class="btn ghost sm" data-q="quit">إنهاء الاختبار</button></div>'+
+    '<div class="qbar"><i style="width:'+((quiz.i+(a?1:0))/N*100)+'%"></i></div>'+
+    '<div class="qcard">'+(q.tf?'<span class="qkind">صح أم خطأ؟</span>':'')+'<p class="qtext">'+q.q+'</p><div class="opts">'+optsHTML+'</div>'+fb+'</div>';
+}
+function quizResultHTML(){
+  var N=quiz.items.length,ok=quiz.ans.filter(function(a){return a&&a.ok;}).length,pct=N?Math.round(ok/N*100):0;
+  if(!quiz.saved){quiz.saved=true;if(quiz.kind!=='wrong'){store.quizBest=Math.max(store.quizBest||0,pct);save();updateStats();}}
+  var wrong=quiz.items.filter(function(it,k){return quiz.ans[k]&&!quiz.ans[k].ok;});
+  var list=wrong.map(function(it){var q=it.q;var ans=q.tf?(q.ans?'صح':'خطأ'):q.o[0];return '<li><p class="wq">'+q.q+'</p><p class="wa">الصحيح: '+ans+' <span class="pg">ص '+q.p+'</span></p></li>';}).join('');
+  var msg=pct===100?'العلامة كاملة.':pct>=80?'ممتاز، بقي القليل.':pct>=60?'جيد، راجع الأسئلة الخاطئة.':'راجع الخريطة والبطاقات، ثم أعد المحاولة.';
+  return '<div class="result"><p class="big">'+AR(ok)+' / '+AR(N)+'</p><p class="rmsg">'+AR(pct)+'٪ · '+msg+'</p>'+
+    (wrong.length?'<h3 class="rh">الأسئلة الخاطئة</h3><ul class="wrong-list">'+list+'</ul>':'')+
+    '<div class="row">'+(wrong.length?'<button type="button" class="btn primary" data-q="wrong">إعادة الأخطاء فقط ('+AR(wrong.length)+')</button>':'')+'<button type="button" class="btn" data-q="home">اختبار جديد</button></div></div>';
+}
+function answer(k){
+  if(!quiz||quiz.i>=quiz.items.length||quiz.ans[quiz.i])return;
+  var it=quiz.items[quiz.i];
+  quiz.ans[quiz.i]={pick:k,ok:k===correctIndex(it)};
+  renderQuiz();
+  var nx=$('#q-next');if(nx)nx.focus();
+}
+function bindQuiz(){
+  $('#quiz-root').addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    var q=b.getAttribute('data-q');
+    if(q==='ten'||q==='all'||q==='num'||q==='wrong'){startQuiz(q);return;}
+    if(q==='next'){quiz.i++;renderQuiz();var f=$('#quiz-root .opt')||$('#quiz-root .btn.primary');if(f)f.focus({preventScroll:true});var y=$('#tabs-anchor').getBoundingClientRect().top+window.scrollY;if(window.scrollY>y)window.scrollTo(0,y);return;}
+    if(q==='quit'||q==='home'){quiz=null;renderQuiz();return;}
+    var p=b.getAttribute('data-pick');if(p!==null)answer(+p);
+  });
+  document.addEventListener('keydown',function(e){
+    if(state.tab!=='quiz'||!quiz||quiz.i>=quiz.items.length)return;
+    if(e.target&&e.target.closest&&e.target.closest('textarea,input'))return;
+    var map={'1':0,'2':1,'3':2,'4':3,'١':0,'٢':1,'٣':2,'٤':3};
+    if(e.key in map){var k=map[e.key];var it=quiz.items[quiz.i];var max=it.q.tf?2:it.q.o.length;if(k<max){e.preventDefault();answer(k);}}
+  });
+}
+
+/* ================= ESSAY ================= */
+var ecur='e1';
+function renderEssayList(){
+  $('#e-list').innerHTML=ESSAY.map(function(e,k){
+    var cov=store.essayCov[e.id];
+    return '<button type="button" class="eitem" data-e="'+e.id+'" aria-pressed="'+(e.id===ecur)+'"><span class="no">'+AR(k+1)+'</span><span class="et">'+e.l+'</span><span class="cov">'+(typeof cov==='number'?AR(Math.round(cov*100))+'٪':'ص '+e.p)+'</span></button>';
+  }).join('');
+}
+function currentEssay(){return ESSAY.filter(function(x){return x.id===ecur;})[0];}
+function renderEssayWork(){
+  var e=currentEssay();
+  $('#e-work').innerHTML='<div class="ework">'+
+    '<div class="vhead"><span class="qkind">سؤال مقالي</span><span class="pg">ص '+e.p+'</span></div>'+
+    '<p class="eprompt">'+e.q+'</p>'+
+    '<label class="lab-sm" for="es-'+e.id+'">الإجابة</label>'+
+    '<textarea id="es-'+e.id+'" rows="8" placeholder="اكتب إجابتك كما تكتبها في الامتحان…">'+esc(store.essay[e.id]||'')+'</textarea>'+
+    '<div class="row"><button type="button" class="btn primary" data-act="cmp">قارن بعناصر الإجابة</button><span class="hint-line">المسودة تُحفظ على هذا الجهاز.</span></div>'+
+    '<div id="e-res" aria-live="polite"></div></div>';
+}
+function compareEssay(){
+  var e=currentEssay();
+  var txt=' '+norm(store.essay[e.id]||'')+' ';
+  var hits=e.items.map(function(it){return it.k.some(function(alt){return alt.every(function(w){return txt.indexOf(norm(w))>=0;});});});
+  var n=hits.filter(Boolean).length,N=e.items.length;
+  $('#e-res').innerHTML='<div class="eres">'+
+    '<p class="ecov">عناصر الإجابة من النص: '+AR(n)+' من '+AR(N)+'</p>'+
+    '<div class="emeter"><i style="width:'+(n/N*100)+'%"></i></div>'+
+    '<ul class="checklist">'+e.items.map(function(it,k){return '<li><label for="ck-'+e.id+'-'+k+'"><input type="checkbox" id="ck-'+e.id+'-'+k+'"'+(hits[k]?' checked':'')+'><span class="t">'+it.t+'</span>'+(hits[k]?'<span class="auto">في إجابتك</span>':'')+'</label></li>';}).join('')+'</ul>'+
+    '<p class="hint-line">العلامة تُوضع تلقائياً حين تُرصد كلمات العنصر في الإجابة، ويمكن تعديلها يدوياً.</p></div>';
+  store.essayCov[e.id]=n/N;save();renderEssayList();updateStats();
+}
+function bindEssay(){
+  $('#e-list').addEventListener('click',function(ev){var b=ev.target.closest('[data-e]');if(!b)return;ecur=b.getAttribute('data-e');store.ecur=ecur;save();renderEssayList();renderEssayWork();});
+  $('#e-work').addEventListener('input',function(ev){if(ev.target.matches('textarea')){store.essay[ecur]=ev.target.value;save();}});
+  $('#e-work').addEventListener('click',function(ev){if(ev.target.closest('[data-act="cmp"]'))compareEssay();});
+  $('#e-work').addEventListener('change',function(ev){
+    if(!ev.target.matches('input[type="checkbox"]'))return;
+    var e=currentEssay(),boxes=$$('#e-res input[type="checkbox"]'),n=boxes.filter(function(b){return b.checked;}).length,N=e.items.length;
+    $('#e-res .ecov').textContent='عناصر الإجابة من النص: '+AR(n)+' من '+AR(N);
+    $('#e-res .emeter i').style.width=(n/N*100)+'%';
+    store.essayCov[e.id]=n/N;save();renderEssayList();updateStats();
+  });
+}
+
+/* ================= STATS / RESET ================= */
+function updateStats(){
+  var ms=CARDS.filter(function(c){return boxOf(c)===3;}).length;
+  var vm=VERB.filter(function(v){return store.verb[v.id];}).length;
+  var es=ESSAY.filter(function(e){return (store.essayCov[e.id]||0)>=0.7;}).length;
+  $('#stats').innerHTML='<li>بطاقات متقنة: <b>'+AR(ms)+'</b> من '+AR(CARDS.length)+'</li><li>نصوص محفوظة: <b>'+AR(vm)+'</b> من '+AR(VERB.length)+'</li><li>أفضل اختبار: <b>'+(store.quizBest==null?'—':AR(store.quizBest)+'٪')+'</b></li><li>أسئلة مقالية مُنجزة: <b>'+AR(es)+'</b> من '+AR(ESSAY.length)+'</li>';
+}
+function renderAll(){renderVerb();renderCardsPanel();renderQuiz();renderEssayList();renderEssayWork();updateStats();}
+function bindReset(){
+  $('#reset').addEventListener('click',function(){$('#reset-confirm').hidden=false;$('#reset').hidden=true;$('#reset-no').focus();});
+  $('#reset-no').addEventListener('click',function(){$('#reset-confirm').hidden=true;$('#reset').hidden=false;$('#reset').focus();});
+  $('#reset-yes').addEventListener('click',function(){
+    store={tab:state.tab};normalizeStore();save();quiz=null;deck='all';ecur='e1';buildQueue(false);renderAll();
+    $('#reset-confirm').hidden=true;$('#reset').hidden=false;$('#reset').focus();
+  });
+}
+
+/* ================= BOOT ================= */
+var booted=false;
+function start(data){
+  if(booted)return;booted=true;
+  data=data||{};
+  deck=DECKS.some(function(d){return d[0]===store.deck;})?store.deck:'all';
+  ecur=ESSAY.some(function(e){return e.id===store.ecur;})?store.ecur:'e1';
+  initMap();bindTabs();bindVerb();bindCards();bindQuiz();bindEssay();bindReset();
+  buildQueue(false);renderAll();
+  var h=(location.hash||'').replace('#','');
+  var t=TABS.indexOf(h)>=0?h:(TABS.indexOf(data.tab)>=0?data.tab:(TABS.indexOf(store.tab)>=0?store.tab:'map'));
+  show(t,true);
+}
+start({});
+/* install + offline */
+var deferredPrompt=null;
+window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();deferredPrompt=e;var w=$('#install');if(w)w.hidden=false;});
+$('#install-btn').addEventListener('click',function(){if(!deferredPrompt)return;deferredPrompt.prompt();deferredPrompt.userChoice.finally(function(){deferredPrompt=null;$('#install').hidden=true;});});
+window.addEventListener('appinstalled',function(){$('#install').hidden=true;});
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}
+})();
+</script>
+</body>
+</html>

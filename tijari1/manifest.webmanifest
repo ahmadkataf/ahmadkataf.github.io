@@ -1,0 +1,30 @@
+{
+  "name": "تجاري ١ · المحاضرة الأولى",
+  "short_name": "تجاري ١",
+  "description": "تطبيق مذاكرة تفاعلي للمحاضرة الأولى من تجاري ١: خريطة، حفظ حرفي، بطاقات، اختبار وأسئلة مقالية، من نص المحاضرة فقط.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#EFF3EF",
+  "theme_color": "#0D6942",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
